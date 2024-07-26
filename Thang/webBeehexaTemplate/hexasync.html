@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 20;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 90px;
+    text-align: left;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.content h1 {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.content p {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.benefits {
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.benefits li {
+  display: flex;
+    align-items: center;
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.benefits li::before {
+  color: green;
+    margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  padding: auto;
+}
+
+button {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 2%; 
+    font-size: 16px;
+    font-weight: bold;
+    border: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.register-btn {
+    background-color: #fbbd05;
+    color: #fff;
+}
+
+.google-btn {
+    background-color: #4285f4;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.google-btn::before {
+    content: url('path/to/google-icon.png');
+    margin-right: 10px;
+}
+.google-btn img {
+    height: 24px;
+    margin-right: 10px;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.main-connect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main-logo {
+    width: 100px;
+    margin: 0 10px;
+}
+
+.connect-icon {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.add-icon {
+    width: 50px;
+    margin: 0 10px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.apps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.app-card {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.app-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.app-card p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.app-card span {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<body>
+    <div class="bg-dblue" style="height: 116px; position:sticky; top:0; z-index: 3;color: #ffffff;">
+        <div class="m-auto" style="max-width: 1440px; height: 100%;color: #0056b3;">
+            <div class="c-white text-center pRel t50 l50 trans-middle">HEADER</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/shopify-logo-png-transparent.png" alt="Shopify Logo">
+        </div>
+        <div class="content">
+            <h1>[Shopify] Integration</h1>
+            <p>HexaSync allows you to connect [Shopify] with any 3rd-party applications to create powerful workflows. The HexaSync [Shopify] Integration offers numerous benefits for both merchants and their customers:</p>
+            <div class="benefis">
+        <div class="benefis">
+            <i class="fas fa-check-circle"></i>
+            <span>Streamline data management processes</span>
+        </div>
+        <div class="benefis">
+            <i class="fas fa-check-circle"></i>
+            <span>Reduce 90% of catalog management efforts</span>
+        </div>
+        <div class="benefis">
+            <i class="fas fa-check-circle"></i>
+            <span>Enhance data quality and consistency</span>
+        </div>
+        <div class="benefis">
+            <i class="fas fa-check-circle"></i>
+            <span>Increase customer satisfaction</span>
+        </div>
+    </div>
+            <div class="buttons">
+                <button class="register-btn">Register an Account</button>
+                <button class="google-btn">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSngB7E8lGZ_SlQIEdaSS91_HrU83cZ74b-3A&s" alt="Google Logo">
+                  Get Started with Google
+                </button>
+            </div>
+        </div>
+        <div class="container">
+          <h1>Connect <span class="highlight">[Shopify]</span> with your Apps</h1>
+          <div class="main-connect">
+              <img src="shopify-logo.png" alt="Shopify Logo" class="main-logo">
+              <img src="connect-icon.png" alt="Connect Icon" class="connect-icon">
+              <img src="add-icon.png" alt="Add Icon" class="add-icon">
+          </div>
+          <div class="search-bar">
+              <input type="text" placeholder="Search by App">
+          </div>
+          <div class="apps-container">
+              <div class="app-card">
+                  <img src="microsoft-dynamics-sl.png" alt="Microsoft Dynamics SL">
+                  <p>Microsoft Dynamics SL</p>
+                  <span>ERP (Enterprise Resource Planning)</span>
+              </div>
+              <div class="app-card">
+                  <img src="microsoft-dynamics-gp.png" alt="Microsoft Dynamics GP">
+                  <p>Microsoft Dynamics GP</p>
+                  <span>ERP (Enterprise Resource Planning)</span>
+              </div>
+              <div class="app-card">
+                  <img src="dynamics-365-business-central.png" alt="Dynamics 365 Business Central">
+                  <p>Dynamics 365 Business Central</p>
+                  <span>ERP (Enterprise Resource Planning)</span>
+              </div>
+              <div class="app-card">
+                  <img src="infor-syteline.png" alt="Infor Syteline">
+                  <p>Infor Syteline</p>
+                  <span>ERP (Enterprise Resource Planning)</span>
+              </div>
+              <div class="app-card">
+                  <img src="microsoft-dynamics-365.png" alt="Microsoft Dynamics 365">
+                  <p>Microsoft Dynamics 365</p>
+                  <span>ERP (Enterprise Resource Planning)</span>
+              </div>
+              <div class="app-card">
+                  <img src="hubspot.png" alt="HubSpot">
+                  <p>HubSpot</p>
+                  <span>CRM (Customer Relationship Management)</span>
+              </div>
+              <div class="app-card">
+                  <img src="quickbooks-online.png" alt="QuickBooks Online">
+                  <p>QuickBooks Online</p>
+                  <span>Accounting</span>
+              </div>
+              <div class="app-card">
+                  <img src="amazon.png" alt="Amazon">
+                  <p>Amazon</p>
+                  <span>Marketplace</span>
+              </div>
+          </div>
+          <div class="pagination">
+              <button class="prev">&lt;</button>
+              <button class="next">&gt;</button>
+          </div>
+      </div>
+</body>
+</html>
