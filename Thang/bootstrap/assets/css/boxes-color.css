@@ -69,7 +69,25 @@
   height: 50px;
   border-radius: 8px;
 }
-h5:hover {
+.h5:hover {
   color: rgb(0, 81, 255);
 }
 
+.align-content-center {
+  align-content: center;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  transition: all linear 500ms;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
+}
+
+.card-header{
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 3.2px 7.2px 0 rgba(0, 0, 0, .132), 0 .6px 1.8px 0 rgba(0, 0, 0, .108);
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+}
