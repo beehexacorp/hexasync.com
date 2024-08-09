@@ -228,7 +228,7 @@ h1, .h1 {
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -237,7 +237,7 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
