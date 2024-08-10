@@ -86,7 +86,7 @@
   transition: all linear 500ms;
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
-  border: 1px solid #000000;
+  border: 1px solid #3b3b3b;
 }
 
 .card-header{
@@ -105,13 +105,98 @@
 }
 
 .align-items-start:hover .item-text h5 {
-  color: rgb(0, 81, 255);
+  color: #ffd000;
+  transform: scale(1.01);
+  transition: all linear 500ms;
+}
+.effect:hover .card-AppIntegrationBrowser {
+  transform: scale(1.05);
+  transition: all linear 100ms;
+  z-index: 1;
+  box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
+}
+.effect:hover .item-text h5 {
+  color: #ffc300;
   transform: scale(1.01);
   transition: all linear 50ms;
+  transform: scale(1.05);
+  z-index: 1;
 }
-.align-items-start:hover .item-text h4 {
-  color: rgb(255, 255, 255);
-  transform: scale(1.01);
-  transition: all linear 50ms;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 200px;
+  height: 100px;
+  background-color: none;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
 
