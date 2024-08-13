@@ -1367,7 +1367,7 @@ progress {
   }
   .row-cols-lg-3 > * {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 32%;
   }
   .row-cols-lg-4 > * {
     flex: 0 0 auto;
@@ -3370,7 +3370,7 @@ textarea.form-control-lg {
   }
 }
 .fade:not(.show) {
-  opacity: 0;
+  opacity: 1000;
 }
 
 .collapse:not(.show) {
@@ -12088,6 +12088,5 @@ textarea.form-control-lg {
     width: 70px;
     ;
 } 
-
 
 /*# sourceMappingURL=bootstrap.css.map */
