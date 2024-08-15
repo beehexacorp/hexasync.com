@@ -33,8 +33,8 @@
 .bg-primary-icon{
   background-color: rgb(255, 255, 255); !important;
 }
-.bg-primary-white {
-  background-color: rgb(255, 255, 255); !important;
+.bg-primary-gray {
+  background-color: rgb(249, 250, 254); !important;
 }
 
 .outer-box.outer-box-blue {
@@ -105,18 +105,18 @@
 }
 
 .align-items-start:hover .item-text h5 {
-  color: #ffd000;
+  color: #1c0097;
   transform: scale(1.01);
   transition: all linear 500ms;
 }
 .effect:hover .card-AppIntegrationBrowser {
-  transform: scale(1.05);
+  transform: scale(1.01);
   transition: all linear 100ms;
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
 }
 .effect:hover .item-text h5 {
-  color: #ffc300;
+  color: #1c0097;
   transform: scale(1.01);
   transition: all linear 50ms;
   transform: scale(1.05);
