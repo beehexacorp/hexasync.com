@@ -34,7 +34,10 @@
   background-color: rgb(255, 255, 255); !important;
 }
 .bg-primary-gray {
-  background-color: rgb(249, 250, 254); !important;
+  background-color: #E6ECF5; !important;
+}
+.bg-primary-white {
+  background-color: #ffffff; !important;
 }
 
 .outer-box.outer-box-blue {
@@ -245,4 +248,3 @@
   display: inline-flex;
   flex-wrap: nowrap;
 }
-

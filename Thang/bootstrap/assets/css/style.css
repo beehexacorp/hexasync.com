@@ -12074,8 +12074,8 @@ textarea.form-control-lg {
 }
 
 .inner-box {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -12085,7 +12085,7 @@ textarea.form-control-lg {
     overflow: hidden;
 }
 .inner-box img {
-    width: 70px;
+    width: 85px;
     ;
 } 
 
