@@ -52,6 +52,7 @@
 .card-AppIntegrationBrowser {
   border-radius: 8px;
   border: 1px solid #cccccc;
+  background-color: #ffffff;
   display: flex;
   width: 80px;
   height: 80px;
