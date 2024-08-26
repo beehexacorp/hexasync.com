@@ -65,6 +65,16 @@
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
 }
+.card-navmenu {
+  border-radius: 8px;
+  border: 1px solid #282828;
+  background-color: #ffffff;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  transition: all linear 200ms;
+}
 .bd-content {
   grid-area: content;
   min-width: 1px

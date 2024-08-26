@@ -7,7 +7,7 @@
   --first-color: hsl(220, 68%, 54%);
   --first-color-lighten: hsl(220, 68%, 97%);
   --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(0, 0%, 2%);
+  --text-color: hsl(0, 0%, 2%); 
   --body-color: rgb(0, 24, 64);
   --body-color-dropdown: hsl(0, 0%, 99%);
   /*========== Font and typography ==========*/
@@ -205,7 +205,7 @@ a {
   color: var(--title-color);
 }
 .dropdown__list {
-  row-gap: 0.25rem;
+  row-gap: 0.1rem;
 }
 .dropdown__link {
   font-size: var(--smaller-font-size);
@@ -272,13 +272,13 @@ a {
     transition: top 0.4s, opacity 0.3s;
   }
   .dropdown__content {
-    grid-template-columns: repeat(5, max-content);
+    grid-template-columns: repeat(4, max-content);
     column-gap: 7rem;
     max-width: 1264px;
     margin-inline: auto;
   }
   .dropdown__group {
-    padding: 4rem 0;
+    padding: 3rem 0;
     align-content: baseline;
     row-gap: 1.25rem;
   }
