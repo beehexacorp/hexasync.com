@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            padding: 20px;
+        }
+        .header {
+            height: 116px;
+            position: sticky;
+            top: 0;
+            z-index: 3;
+            background-color: #003366; /* Assuming bg-dblue is a dark blue color */
+        }
+        .header-content {
+            max-width: 1440px;
+            height: 100%;
+            margin: auto;
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .main-content {
+            max-width: 1440px;
+            margin: auto;
+            padding: 20px;
+        }
+     
+        .image-container {
+            height: 73%;
+            width: 73%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .bg-yellow {
+            background-color: rgb(255, 166, 0);
+            color: rgb(255, 255, 255);
+        }
+        .bg-blue {
+            background-color: blue;
+            color: white;
+        }
+        .row > .col-6, .row > .col-3, .row > .col-4, .row > .col-auto, .row > .col-11 {
+            padding: 10px;
+        }
+        .faq {
+            margin: 15px auto;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .image-footer {
+            z-index: -1;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+</style>
+
+<body class="m-0 p-0">
+    <div class="bg-dblue" style="height: 116px; position:sticky; top:0; z-index: 3;">
+        <div class="m-auto" style="max-width: 1440px; height: 100%;">
+            <div class="c-white text-center pRel t50 l50 trans-middle">HEADER</div>
+        </div>
+    </div>
+    <div class="m-auto" style="max-width: 1440px;">
+        <div class="m-auto container">
+            <div class="mb-3"></div>
+            <div class="pRel temp-image"
+                style="width: 133px; height: 133px; box-shadow: 0 0 7px; border-radius: 0.4rem; overflow: hidden;">
+                <div class="pAbs t50 l50 trans-middle" style="height: 73%; width: 73%;">
+                    <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                </div>
+            </div>
+            <div class="h1 fw-semibold"> Shopify Integration
+            </div>
+            <p>HexaSync allows you to connect Shopify with any 3rd-party applications to
+                create powerful workflows
+                <br>The HexaSync <span class="c-temp">Shopify</span> Integration offers numerous benefits for both
+                merchants and their customers:
+            </p>
+            <hr>
+            <div class="row">
+                <div class="col-6"><img src="image/icon_tick.png" alt="icon"> Streamline data management processes</div>
+                <div class="col-6"><img src="image/icon_tick.png" alt="icon"> Reduce 90% of catalog management efforts
+                </div>
+                <div class="col-6"><img src="image/icon_tick.png" alt="icon"> Enhance data quality and consistency</div>
+                <div class="col-6"><img src="image/icon_tick.png" alt="icon"> Increase customer satisfaction</div>
+            </div>
+            <hr>
+            <div class="c-white">
+                <div class="button bg-yellow d-inlineBlock">
+                    <div class="pRel h-100 w-100">
+                        <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                            Register an Account
+                        </div>
+                    </div>
+                </div>
+                <div class="button bg-blue d-inlineBlock">
+                    <div class="pRel h-100 w-100">
+                        <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                            <div class="row">
+                                <div class="col-2 pRel">
+                                    <img src="image/icon_google.png" class="pAbs t50 l50 trans-middle">
+                                    <div class="" style="height:100px"></div>
+                                </div>
+                                <div class="col-10 pRel">
+                                    <div class="pAbs t50 l50 trans-middle w-100">
+                                        Get Started with Google</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h2 w-100 text-center">
+                Connect <span class="c-temp">Shopify</span> with your Apps
+            </div>
+            <div class="w-fit m-auto">
+                <div class="pRel d-inlineBlock bg-cCode temp-image"
+                    style="width: 133px; height: 133px; background-color: #96bf48;border-radius: 0.4rem">
+                    <div class="pAbs t50 l50 trans-middle"
+                        style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <img src="image/image_exchange.png" style="margin: 0 30px 30px 30px; background-color: #0263b6;">
+                <img srcset="image/image_plus.png" style="border: 1px solid black; border-style: dotted; opacity: 0.3;">
+                <div class="pRel">
+                    <input class="h-100 d-inlineBlock"
+                        style="padding: 12px 14px 12px 14px;width: 99%; box-sizing: border-box; color: #0c8ce9;border: 1px solid #0c8ce9; border-radius: 0.5rem; "
+                        placeholder="Search by App">
+                    <img src="image/icon_lookup.png" class="pAbs t50"
+                        style="transform: translate(0%,-50%); right: 14px; height: 60%">
+                </div>
+            </div>
+            <div class="row" style="grid-auto-rows: 1fr;">
+                <div class="col-3 ho-mouse" style=" margin:10px; border: 1px solid #d9d9d9; padding: 20px;">
+
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 67px; height: 67px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="fw-semibold" style="font-size: 15px;">Name</div>
+                    <div class="" style="font-size: 10px;">Description</div>
+                </div>
+
+                <div class="col-3 ho-mouse" style=" margin:10px; border: 1px solid #d9d9d9; padding: 20px;">
+
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 67px; height: 67px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="fw-semibold" style="font-size: 15px;">Name</div>
+                    <div class="" style="font-size: 10px;">Description</div>
+                </div>
+                <div class="col-3 ho-mouse" style=" margin:10px; border: 1px solid #d9d9d9; padding: 20px;">
+
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 67px; height: 67px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="fw-semibold" style="font-size: 15px;">Long Name Long Name Long Name</div>
+                    <div class="" style="font-size: 10px;">Description</div>
+                </div>
+                <div class="col-3 ho-mouse" style=" margin:10px; border: 1px solid #d9d9d9; padding: 20px;">
+
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 67px; height: 67px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="fw-semibold" style="font-size: 15px;">Name</div>
+                    <div class="" style="font-size: 10px;">Description</div>
+                </div>
+                <div class="col-3 ho-mouse" style=" margin:10px; border: 1px solid #d9d9d9; padding: 20px;">
+
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 67px; height: 67px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="fw-semibold" style="font-size: 15px;">Name</div>
+                    <div class="" style="font-size: 10px;">Description</div>
+                </div>
+            </div>
+            <div class="w-fit m-auto" style="height: 60px; margin-bottom: 20px;">
+                <div class="border d-inlineBlock h-100 pRel" style="margin: 0 5px; width: 60px;">
+                    <img src="image/icon_arrow.png" alt="icon_arrow" class="pAbs t50 l50"
+                        style="transform: rotateY(180deg) translate(50%,-50%); opacity: 0.7;">
+                </div>
+                <div class="border d-inlineBlock h-100 pRel" style="margin: 0 5px; width: 60px;">
+                    <img src="image/icon_arrow.png" alt="icon_arrow" class="pAbs t50 l50 trans-middle"
+                        style="opacity: 0.7;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-dblue">
+        <div class="m-auto" style="max-width: 1440px;">
+            <div class="c-white text-center fw-bold h2">Ready to connect with all your Systems?<br>Explore 1000+ App
+                Connections</div>
+            <div class="w-fit m-auto">
+                <div class="c-white">
+                    <div style="margin: 0 12px;" class="button bg-yellow d-inlineBlock">
+                        <div class="pRel h-100 w-100">
+                            <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                                Register an Account
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin: 0 12px;" class="button bg-blue d-inlineBlock">
+                        <div class="pRel h-100 w-100">
+                            <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                                <div class="row">
+                                    <div class="col-2 pRel">
+                                        <img src="image/icon_google.png" class="pAbs t50 l50 trans-middle">
+                                        <div class="" style="height:100px"></div>
+                                    </div>
+                                    <div class="col-10 pRel">
+                                        <div class="pAbs t50 l50 trans-middle w-100">
+                                            Get Started with Google</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-auto" style="max-width: 1440px;">
+        <div class="m-auto container">
+            <div class="h2 text-center">Automate <span class="c-temp">Shopify</span> Workflows<br>with HexaSync Profiles
+            </div>
+            <div class="pRel m-auto" style="max-width: 860px;">
+                <input class="h-100 d-inlineBlock"
+                    style="padding: 12px 14px 12px 14px;width: 99%; box-sizing: border-box; color: gray;border: 1px solid gray; border-radius: 0.5rem; "
+                    placeholder="Search for profile tempaltes to connect to Shopify">
+                <img src="image/icon_lookup.png" class="pAbs t50"
+                    style="transform: translate(0%,-50%); right: 14px; height: 60%; filter: grayscale(100%);">
+            </div>
+            <div class="row" style="grid-auto-rows: 1fr;">
+                <div class="col-4 border pRel" style=" margin:10px; padding: 20px;">
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="" style="font-size: 25px;">
+                        <span class="c-temp">Shopify</span> - QuickBooks Online
+                    </div>
+                    <div class="" style="height: 50px;"></div>
+                    <div class="pAbs bg-blue c-white fw-semibold"
+                        style="bottom: 20px; font-size: 12px; border-radius: 0.2rem; padding: 10px 20px">Register an
+                        Account</div>
+
+                </div>
+                <div class="col-4 border pRel" style=" margin:10px; padding: 20px;">
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="" style="font-size: 25px;">
+                        <span class="c-temp">Shopify</span> - Amazon
+                    </div>
+                    <div class="" style="height: 50px;"></div>
+                    <div class="pAbs bg-blue c-white fw-semibold"
+                        style="bottom: 20px; font-size: 12px; border-radius: 0.2rem; padding: 10px 20px">Register an
+                        Account</div>
+
+                </div>
+                <div class="col-4 border pRel" style=" margin:10px; padding: 20px;">
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="" style="font-size: 25px;">
+                        <span class="c-temp">Shopify</span> - Long Name Long Name Long Name Long Name
+                    </div>
+                    <div class="" style="height: 50px;"></div>
+                    <div class="pAbs bg-blue c-white fw-semibold"
+                        style="bottom: 20px; font-size: 12px; border-radius: 0.2rem; padding: 10px 20px">Register an
+                        Account</div>
+
+                </div>
+                <div class="col-4 border pRel" style=" margin:10px; padding: 20px;">
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="" style="font-size: 25px;">
+                        <span class="c-temp">Shopify</span> - Amazon
+                    </div>
+                    <div class="" style="height: 50px;"></div>
+                    <div class="pAbs bg-blue c-white fw-semibold"
+                        style="bottom: 20px; font-size: 12px; border-radius: 0.2rem; padding: 10px 20px">Register an
+                        Account</div>
+
+                </div>
+                <div class="col-4 border pRel" style=" margin:10px; padding: 20px;">
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="pRel d-inlineBlock bg-cCode temp-image"
+                        style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                        <div class="pAbs t50 l50 trans-middle"
+                            style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                    <div class="" style="font-size: 25px;">
+                        <span class="c-temp">Shopify</span> - Amazon
+                    </div>
+                    <div class="" style="height: 50px;"></div>
+                    <div class="pAbs bg-blue c-white fw-semibold"
+                        style="bottom: 20px; font-size: 12px; border-radius: 0.2rem; padding: 10px 20px">Register an
+                        Account</div>
+
+                </div>
+
+            </div>
+            <div class="fw-semibold c-blue w-fit m-auto"
+                style="border: 1px solid #014ef3; padding: 10px 20px; border-radius: 0.4rem;">
+                Explore More
+            </div>
+        </div>
+    </div>
+    <div class="bg-dblue">
+        <div class="m-auto" style="max-width: 1440px; padding-top: 50px">
+            <div class="w-fit m-auto">
+                <div class="pRel d-inlineBlock bg-cCode temp-image"
+                    style="width: 133px; height: 133px; background-color: #96bf48;border-radius: 0.4rem">
+                    <div class="pAbs t50 l50 trans-middle"
+                        style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+                <img src="image/image_exchange.png" style="margin: 0 30px 30px 30px; background-color: #0263b6;">
+                <div class="bg-white w-fit d-inlineBlock">
+                    <img srcset="image/image_plus.png"
+                        style="border: 1px solid black; border-style: dotted; opacity: 0.3;">
+
+                </div>
+            </div>
+
+            <div class="c-white text-center fw-bold h2">Looking for your Apps?<br>Explore 1000+ App Connections</div>
+            <div class="c-white text-center">Automation for the little things, so you can focus on the big stuff<br>Let
+                HexaSync handle the hustle while you do the muscle!</div>
+            <div class="w-fit m-auto">
+                <div class="c-white">
+                    <div style="margin: 0 12px;" class="button bg-yellow d-inlineBlock">
+                        <div class="pRel h-100 w-100">
+                            <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                                Register an Account
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin: 0 12px;" class="button bg-blue d-inlineBlock">
+                        <div class="pRel h-100 w-100">
+                            <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                                <div class="row">
+                                    <div class="col-2 pRel">
+                                        <img src="image/icon_google.png" class="pAbs t50 l50 trans-middle">
+                                        <div class="" style="height:100px"></div>
+                                    </div>
+                                    <div class="col-10 pRel">
+                                        <div class="pAbs t50 l50 trans-middle w-100">
+                                            Get Started with Google</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-auto" style="max-width: 1440px;">
+        <div class="m-auto container">
+            <div class="h1 fw-semibold">FAQ</div>
+            <div class="w-100 border faq" style="margin: 15px auto; padding: 30px; box-sizing: border-box;">
+                <div class="m-auto" style="width: 90%;">
+                    What is <span class="c-temp">Shopify</span> and how does it work?
+                </div>
+            </div>
+            <div class="w-100 border faq" style="margin: 15px auto; padding: 30px; box-sizing: border-box;">
+                <div class="m-auto" style="width: 90%;">
+                    How can I integrate with <span class="c-temp">Shopify</span>? </div>
+            </div>
+            <div class="w-100 border faq" style="margin: 15px auto; padding: 30px; box-sizing: border-box;">
+                <div class="m-auto" style="width: 90%;">
+                    What are the benefits of integrating with <span class="c-temp">Shopify</span>? </div>
+            </div>
+            <div class="w-100 border faq" style="margin: 15px auto; padding: 30px; box-sizing: border-box;">
+                <div class="m-auto" style="width: 90%;">
+                    What is <span class="c-temp">Shopify</span> API Integration? </div>
+            </div>
+            <div class="w-100 border faq" style="margin: 15px auto; padding: 30px; box-sizing: border-box;">
+                <div class="m-auto" style="width: 90%;">
+                    How to Connect to <span class="c-temp">Shopify</span>? </div>
+            </div>
+            <div class="w-100 border faq" style="margin: 15px auto; padding: 30px; box-sizing: border-box;">
+                <div class="m-auto" style="width: 90%;">
+                    What can <span class="c-temp">Shopify</span> integrate with? </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-auto">
+                    <div class="pRel temp-image"
+                        style="width: 133px; height: 133px; box-shadow: 0 0 7px; border-radius: 0.4rem; overflow: hidden">
+                        <div class="pAbs t50 l50 trans-middle" style="height: 73%; width: 73%;">
+                            <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-11" style="padding-left: 20px;">
+                    <div class="c-blue" style="font-size: 25px;">App > <span class="c-temp">Shopify</span> Integrations
+                    </div>
+                    <div class="fw-semibold h2">About [Shopify] </div>
+                    <div class="" style="width:75%">Shopify is a comprehensive e-commerce platform that allows
+                        individuals and businesses
+                        to create and manage online stores.</div>
+                    <div class="fw-semibold" style="text-decoration: underline;">Related Categories</div>
+                    <div class="row" style="grid-auto-rows: 1fr;">
+                        <div class="col-4 border" style="border-radius: 0.4rem; padding: 20px;margin: 0 10px">
+                            <div class="pRel d-inlineBlock bg-cCode temp-image"
+                                style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                                <div class="pAbs t50 l50 trans-middle"
+                                    style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                                    <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                                </div>
+                            </div>
+                            <div class="" style="font-size: 15px;">Long Name Long Name Long Name Long Name</div>
+                            <div class="" style="font-size: 10px;">Description</div>
+                        </div>
+                        <div class="col-4 border" style="border-radius: 0.4rem; padding: 20px;margin: 0 10px">
+                            <div class="pRel d-inlineBlock bg-cCode temp-image"
+                                style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                                <div class="pAbs t50 l50 trans-middle"
+                                    style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                                    <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                                </div>
+                            </div>
+                            <div class="" style="font-size: 15px;">Name</div>
+                            <div class="" style="font-size: 10px;">Description</div>
+                        </div>
+                        <div class="col-4 border" style="border-radius: 0.4rem; padding: 20px;margin: 0 10px">
+                            <div class="pRel d-inlineBlock bg-cCode temp-image"
+                                style="width: 80px; height: 80px; background-color: #96bf48;border-radius: 0.4rem">
+                                <div class="pAbs t50 l50 trans-middle"
+                                    style="height: 73%; width: 73%; border-radius: 0.4rem; box-shadow: 0 0 7px; overflow: hidden;">
+                                    <img src="https://images.unsplash.com/photo-1648878136531-15e7d3a88e76?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt="temp" class="image-temp w-100 h-100 object-fit-cover">
+                                </div>
+                            </div>
+                            <div class="" style="font-size: 15px;">Name</div>
+                            <div class="" style="font-size: 10px;">Description</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pRel" style="overflow: hidden;padding: 150px 0 150px 0">
+        <div class="m-auto text-center" style="max-width: 1440px;">  
+        
+            <div class="h1 m-auto" style="width: 70%;">
+                All systems go, Automation's glow with HexaSync's flow!
+            </div>  
+            <div class="m-auto" style="font-size: 32px; width: 65%;">Make your workflow smarter - Automate and Connect with 1000+ apps!</div>
+        </div>
+        <div class="c-white w-fit m-auto" style="margin-top: 50px">
+            <div class="button bg-yellow d-inlineBlock">
+                <div class="pRel h-100 w-100">
+                    <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                        Register an Account
+                    </div>
+                </div>
+            </div>
+            <div class="button bg-blue d-inlineBlock">
+                <div class="pRel h-100 w-100">
+                    <div class="pAbs t50 l50 trans-middle w-100 text-center">
+                        <div class="row">
+                            <div class="col-2 pRel">
+                                <img src="image/icon_google.png" class="pAbs t50 l50 trans-middle">
+                                <div class="" style="height:100px"></div>
+                            </div>
+                            <div class="col-10 pRel">
+                                <div class="pAbs t50 l50 trans-middle w-100">
+                                    Get Started with Google</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="image/image_footer.png" class="pAbs object-fit-cover t50 l50 trans-middle w-100" style="z-index: -1;">
+
+    </div>
+    
+    <!-- <div class="" style="height: 100vh;"></div> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
