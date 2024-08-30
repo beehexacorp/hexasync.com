@@ -28,7 +28,19 @@
 }
 
 .bg-primary-darkblue {
-  background-color: rgb(0, 24, 64); !important;
+  background: radial-gradient(90% 106.38% at 122.89% 49.97%,#0000fa 0,#0025dc 9%,#0c00ad 25%,#090086 41%,#020067 56%,#080052 72%,#0e0045 86%,rgb(0, 24, 64) 100%);
+    color: #fff;
+    background-size: 300%;
+    animation: Gradient 5s ease-in-out 0s infinite alternate !important;
+}
+@keyframes Gradient {
+  0% {
+      background-position: 0
+  }
+
+  to {
+      background-position: 100%
+  }
 }
 .bg-primary-icon{
   background-color: rgb(255, 255, 255); !important;
@@ -168,17 +180,54 @@
   }
 }
 
-.item {
+.wrapper {
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+@keyframes scrollRight {
+  to {
+    right: -200px;
+  }
+}
+
+.itemLeft,
+.itemRight {
   width: 200px;
   height: 100px;
-  background-color: none;
   border-radius: 6px;
   position: absolute;
+  animation-timing-function: linear;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+}
+
+.itemLeft {
   left: max(calc(200px * 8), 100%);
   animation-name: scrollLeft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+}
+
+.itemRight {
+  right: max(calc(200px * 8), calc(100% + 200px));
+  animation-name: scrollRight;
 }
 
 .item1 {
@@ -212,7 +261,6 @@
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
-
 
 .flex {
   display: flex;
@@ -258,4 +306,24 @@
 .d-flexver2 {
   display: inline-flex;
   flex-wrap: nowrap;
+}
+
+/*======================
+   Text-Typing
+========================*/
+
+.container .text{
+  position: relative;
+  color: #ffffff;
+}
+.container .text.first-text{
+  color: #FFF;
+}
+@keyframes animate{
+  40%, 60%{
+      left: calc(100% + 4px);
+  }
+  100%{
+      left: 0%;
+  }
 }
