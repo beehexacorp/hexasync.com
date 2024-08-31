@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 li {
@@ -12,9 +13,9 @@ li {
 
 :root {
 	--white: #FFF;
-	--blue: #ffa600;
+	--blue: #562BF7;
 	--light: #F5F5F5;
-	--light-blue: #fefdeb;
+	--light-blue: #F3F0FF;
 	--grey: #eee;
 	--dark-grey: #666;
 	--black: #222;
@@ -57,10 +58,15 @@ li {
 	display: block;
 }
 .content li h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--black);
 	margin-bottom: .75rem;
 }
 .content li p {
 	margin-bottom: .5rem;
+	color: var(--dark-grey);
+	font-size: .875rem;
 }
 
 
