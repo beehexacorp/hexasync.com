@@ -1,0 +1,21 @@
+.my-body .boxes {
+    margin-right: 10px;
+    padding: 10px;
+    border: 0px;
+}
+
+.my-body .boxes.boxes-success {
+    background-color: #198754;
+
+    /* border-width: 10px !important;
+    border-color: blue !important; */
+}
+
+.my-body .boxes.boxes-danger {
+    background-color: rgb(135, 25, 30);
+}
+.my-body .boxes>.boxes-inner {
+    padding: 20px;
+    border-width: 1px !important;
+    background-color: white;
+}

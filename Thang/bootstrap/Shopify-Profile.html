@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <script src="../assets/js/color-modes.js" defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>HexaSync-Tem</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link href="./assets/css/boxes-color.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./assets/css/boxes-color.css"></noscript>
+    <link rel="preload" href="./assets/css/arrow-button.css">
+    <link href="https://fonts.googleapis.com/css2?family=Google Sans:wght@400;500;600;700&display=swap" rel="stylesheet" >
+    <link rel="preload" href="./assets/css/mega-menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"  rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"></noscript>
+    <link rel="stylesheet" href="./assets/css/mobile-css.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="./assets/css/desktop.css">
+    <link href="./assets/css/style.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="./assets/css/style.css"></noscript>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .b-example-divider {
+            width: 100%;
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
+
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
+
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
+
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .btn-bd-primary {
+            --bd-violet-bg: #712cf9;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+            --bs-btn-font-weight: 600;
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bd-violet-bg);
+            --bs-btn-border-color: var(--bd-violet-bg);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: #6528e0;
+            --bs-btn-hover-border-color: #6528e0;
+            --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+            --bs-btn-active-color: var(--bs-btn-hover-color);
+            --bs-btn-active-bg: #5a23c8;
+            --bs-btn-active-border-color: #5a23c8;
+        }
+
+        .bd-mode-toggle {
+            z-index: 1500;
+        }
+
+        .bd-mode-toggle .dropdown-menu .active .bi {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1077.0 data-gr-ext-installed">
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path
+                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path
+                d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path
+                d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path
+                d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+            aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Light
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
+                    aria-pressed="false">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Dark
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto"
+                    aria-pressed="true">
+                    <svg class="bi me-2 opacity-50" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Auto
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="arrow-right-circle" viewBox="0 0 16 16">
+            <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+        </symbol>
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+    </svg>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav role="#" class="nav container-xxl bd-gutter masthead-followup">
+            <div class="nav__data">
+                <svg xmlns="http://www.w3.org/2000/svg" id="a" width="150" height="50" viewBox="0 0 2048 576.7442">
+                    <defs>
+                        <style>
+                            .b {
+                                fill: #ffae00;
+                            }
+                        </style>
+                    </defs>
+                    <path class="b"
+                        d="M235.8971,33.6963L10.0233,164.7207v262.0487l225.8738,131.0236,225.8744-131.0236V164.7207L235.8971,33.6963ZM235.7703,81.6977l173.1015,100.3727-172.9747,100.3727L62.8989,182.091l172.8714-100.3933ZM418.7666,399.7558l-182.8696,106.3264-182.8689-105.3414v-62.6935l182.8689,105.3437,182.8696-106.3286v62.6935ZM418.7666,287.8348l-182.8074,106.4014-182.9311-106.4014v-62.6928l182.9311,106.4029,182.8074-106.4029v62.6928Z" />
+                    <path class="b"
+                        d="M733.2232,171.2417h45.5154v250.3325h-45.5154v-110.8983h-108.7309v110.8983h-45.5154v-250.3325h45.5154v100.0602h108.7309v-100.0602Z" />
+                    <path class="b"
+                        d="M808.3572,328.0151c0-16.6152,2.4659-31.1845,7.4055-43.7089,4.9329-12.5188,11.4975-22.9381,19.687-31.2458,8.184-8.3087,17.5753-14.5681,28.1762-18.7849,10.5942-4.2101,21.4301-6.3207,32.5099-6.3207,26.0088,0,46.2939,8.0704,60.8676,24.2023,14.5681,16.1363,21.8544,40.2205,21.8544,72.2448,0,2.4102-.0624,5.1211-.1804,8.1283-.1247,3.0139-.3052,5.7248-.5424,8.1283h-124.6244c1.2029,15.1718,6.559,26.911,16.0751,35.2197,9.5105,8.3087,23.299,12.4631,41.361,12.4631,10.5942,0,20.2851-.9601,29.0795-2.8914,8.7877-1.9246,15.7131-3.9717,20.7707-6.1391l5.7794,35.761c-2.4102,1.2073-5.7237,2.4726-9.9337,3.7935-4.2167,1.3254-9.0305,2.5283-14.449,3.6108-5.4185,1.0848-11.2602,1.987-17.5207,2.7109-6.265.7217-12.6424,1.0826-19.1446,1.0826-16.6164,0-31.0664-2.4726-43.348-7.4044-12.2816-4.934-22.3957-11.7971-30.3436-20.5914-7.9468-8.7877-13.8509-19.1435-17.7001-31.0653-3.8548-11.9196-5.7794-24.9819-5.7794-39.1936ZM935.149,308.5085c0-6.0166-.8465-11.7392-2.5283-17.1577-1.6874-5.4185-4.1544-10.1153-7.4055-14.0881-3.2511-3.9739-7.225-7.1003-11.9207-9.3924-4.6957-2.2855-10.2946-3.4315-16.7968-3.4315-6.745,0-12.6435,1.2641-17.7012,3.7924-5.0565,2.5294-9.3345,5.8428-12.8229,9.9348-3.4939,4.0976-6.2037,8.7932-8.1283,14.087-1.9302,5.3004-3.2511,10.7178-3.9728,16.2555h81.2764Z" />
+                    <path class="b"
+                        d="M1075.2503,290.4977l40.1515-57.8471h45.8763l-63.436,90.4929c13.2539,16.6464,25.9598,33.4666,38.1155,50.465,12.1535,17.0006,22.1596,32.9855,30.0162,47.9657h-47.5959c-2.203-4.4261-5.0365-9.2955-8.5003-14.6016-3.4727-5.306-7.1794-10.8303-11.1266-16.5707-3.9494-5.7404-8.0771-11.4295-12.3762-17.063-4.3081-5.6335-8.4959-10.9395-12.5589-15.9225-8.4669,9.8212-16.7467,20.6805-24.846,32.5734-8.0993,11.8906-14.8109,22.418-20.1281,31.5843h-44.5665c3.5674-7.2529,7.9479-14.8956,13.1514-22.9214,5.2035-8.0258,10.7746-16.2277,16.7233-24.6077,5.9442-8.3778,12.0744-16.7578,18.3895-25.1401,6.3151-8.3756,12.57-16.3457,18.7671-23.9038l-64.141-92.3506h48.0426l40.0423,57.8471Z" />
+                    <path class="b"
+                        d="M1243.637,227.9549c14.4478,0,26.6058,1.8054,36.4827,5.4185,9.8725,3.612,17.758,8.6685,23.6609,15.1707,5.8986,6.5022,10.1153,14.3933,12.6436,23.661,2.5283,9.2733,3.7935,19.4498,3.7935,30.5251v114.5091c-6.745,1.4457-16.9227,3.1943-30.524,5.237-13.6081,2.0449-28.9603,3.0718-46.0567,3.0718-11.3226,0-21.674-1.0848-31.0676-3.2522-9.3913-2.1674-17.4016-5.6557-24.0218-10.4739-6.6247-4.8159-11.8015-11.0753-15.5327-18.7849-3.7356-7.7051-5.5978-17.2145-5.5978-28.5371,0-10.837,2.105-19.9855,6.3218-27.4545,4.2101-7.46,9.9326-13.5457,17.1565-18.2414,7.2262-4.6957,15.5906-8.0659,25.1066-10.1153,9.5094-2.0427,19.4442-3.0696,29.8023-3.0696,4.8137,0,9.8702.3052,15.1696.9022,5.2949.6037,10.9573,1.6261,16.9783,3.0718v-7.2262c0-5.0565-.6037-9.8714-1.8065-14.4478-1.2073-4.572-3.3124-8.6083-6.3195-12.1022-3.0161-3.4872-6.9878-6.197-11.9218-8.1272-4.9385-1.9246-11.1422-2.8902-18.6022-2.8902-10.1153,0-19.3885.7228-27.8153,2.1674-8.4335,1.4457-15.2965,3.133-20.5914,5.0576l-5.4174-35.4001c5.5377-1.9257,13.6014-3.8503,24.2023-5.7805,10.5942-1.9246,21.9101-2.8891,33.9567-2.8891ZM1247.2479,390.8697c13.4856,0,23.7167-.7217,30.7045-2.1674v-48.4045c-2.4102-.724-5.903-1.4457-10.4761-2.1674-4.5754-.724-9.6341-1.0848-15.1696-1.0848-4.8204,0-9.6987.3609-14.6305,1.0848-4.9385.7217-9.3913,2.0493-13.3653,3.9739-3.9739,1.9291-7.1682,4.6377-9.574,8.1261-2.4102,3.495-3.6108,7.8922-3.6108,13.1848,0,10.3581,3.25,17.5196,9.7522,21.4936,6.5022,3.9739,15.2899,5.9609,26.3697,5.9609Z" />
+                    <path class="b"
+                        d="M1418.8334,387.6175c16.3724,0,28.2943-2.7644,35.761-8.3065,7.4623-5.5377,11.1979-13.3653,11.1979-23.4805,0-6.0166-1.2652-11.1979-3.7935-15.5327-2.5283-4.3348-6.1391-8.2464-10.837-11.7414-4.6957-3.4883-10.4182-6.7383-17.1588-9.7522-6.7428-3.0094-14.4478-5.9609-23.1175-8.85-8.6696-3.1275-17.0407-6.5579-25.1066-10.2957-8.0704-3.73-15.1718-8.3644-21.3109-13.9066-6.1413-5.5377-11.0798-12.1579-14.8109-19.8686-3.7378-7.704-5.6-16.9772-5.6-27.8142,0-22.6341,7.8231-40.3954,23.4805-53.2817,15.6507-12.8797,36.9639-19.3262,63.9372-19.3262,15.653,0,29.5595,1.7497,41.7219,5.2381,12.1579,3.4939,21.7319,7.2863,28.7197,11.3794l-14.0892,36.8447c-8.1885-4.572-17.1588-8.0648-26.911-10.475-9.7544-2.4046-19.8118-3.6131-30.1632-3.6131-12.2827,0-21.8544,2.5294-28.7175,7.5859-6.8631,5.0576-10.2957,12.1635-10.2957,21.3131,0,5.5421,1.1405,10.2946,3.4326,14.2685,2.2855,3.9739,5.5354,7.5291,9.7522,10.6566,4.2101,3.1319,9.1508,6.0222,14.8109,8.6696,5.6557,2.6519,11.8594,5.1813,18.6022,7.5859,11.7971,4.3348,22.3356,8.7309,31.6088,13.1848,9.2688,4.4584,17.0964,9.7533,23.4805,15.8935,6.3775,6.1413,11.2536,13.3653,14.6283,21.674,3.3703,8.3087,5.0588,18.3661,5.0588,30.1632,0,22.6385-8.0102,40.1582-24.0218,52.5589-16.0183,12.4052-39.4364,18.6022-70.259,18.6022-10.3581,0-19.8118-.666-28.3566-1.9847-8.5515-1.3276-16.1386-2.9537-22.7588-4.8783-6.627-1.9246-12.3428-3.9116-17.1588-5.9587-4.8204-2.0449-8.6696-3.9116-11.5587-5.6l13.3653-37.2067c6.5022,3.6131,15.2899,7.2239,26.3697,10.837,11.0753,3.6131,24.4406,5.4174,40.098,5.4174Z" />
+                    <path class="b"
+                        d="M1687.5843,232.6506c-19.471,71.7659-42.0716,136.7879-67.7864,195.0649-4.8204,10.837-9.7633,20.1036-14.8265,27.8153-5.0632,7.7028-10.7301,14.087-16.9962,19.1435-6.2705,5.0588-13.2628,8.7275-20.9723,11.0174-7.7162,2.2877-16.6353,3.4326-26.7595,3.4326-6.7517,0-13.4455-.7217-20.0724-2.1674-6.6314-1.4457-11.6322-3.0139-15.007-4.6957l7.9456-35.0393c8.7097,3.368,17.3013,5.0565,25.766,5.0565,11.3694,0,20.2573-2.7087,26.6704-8.1283,6.4109-5.4174,12.0332-13.7885,16.8759-25.1044-13.7885-26.4877-27.0312-55.3879-39.7305-86.696-12.6992-31.3037-24.004-64.5364-33.9166-99.6993h46.6002c2.4147,10.1142,5.3728,21.0759,8.8834,32.8719,3.5062,11.8026,7.3153,23.7846,11.4251,35.9425,4.1076,12.1624,8.4535,24.2646,13.049,36.3045,4.5932,12.0443,9.1886,23.2422,13.7818,33.5936,7.6717-21.4312,14.8622-44.2502,21.5782-68.4524,6.7116-24.2034,12.824-47.6215,18.3394-70.2601h45.1523Z" />
+                    <path class="b"
+                        d="M1703.117,238.7908c8.4268-2.4035,19.3819-4.6957,32.8719-6.8631,13.4833-2.1674,28.4123-3.2511,44.7915-3.2511,15.4101,0,28.2943,2.1117,38.6523,6.3218,10.3514,4.2167,18.6044,10.1142,24.7436,17.7001,6.1413,7.5859,10.4761,16.7411,13.0044,27.4534,2.5283,10.7189,3.7935,22.4581,3.7935,35.2197v106.2026h-43.7089v-99.3395c0-10.113-.666-18.7203-1.987-25.8273-1.3254-7.1003-3.4928-12.8797-6.5022-17.3392-3.0139-4.4529-7.1059-7.704-12.2804-9.7533-5.1835-2.0427-11.503-3.0696-18.9653-3.0696-5.5421,0-11.3226.3609-17.3392,1.0837-6.0233.7217-10.4761,1.3265-13.3653,1.8054v152.4397h-43.7089v-182.7833Z" />
+                    <path class="b"
+                        d="M1886.2589,327.2934c0-13.9645,2.1674-27.0312,6.5022-39.1936,4.3348-12.1579,10.5318-22.6953,18.6022-31.6077,8.0659-8.9068,17.8827-15.8946,29.4414-20.9512,11.5587-5.0576,24.5631-7.5859,39.0132-7.5859,17.8181,0,34.6784,3.2511,50.5719,9.7533l-9.3913,35.761c-5.0588-2.1674-10.7813-3.9728-17.1588-5.4185-6.3841-1.4446-13.1848-2.1674-20.411-2.1674-17.1009,0-30.1053,5.3628-39.011,16.0751-8.9124,10.7189-13.3675,25.8284-13.3675,45.335,0,18.7826,4.2123,33.656,12.6435,44.611,8.4268,10.9617,22.6341,16.437,42.6263,16.437,7.4623,0,14.8109-.724,22.0349-2.1674,7.2239-1.4457,13.4833-3.2522,18.7826-5.4196l6.1413,36.1241c-4.8204,2.4102-12.1,4.5776-21.8544,6.5022-9.7522,1.9246-19.8095,2.8891-30.1632,2.8891-16.1363,0-30.1609-2.4726-42.0828-7.4044-11.9196-4.934-21.7965-11.7971-29.6197-20.5914-7.8298-8.7877-13.6704-19.2638-17.5196-31.4262-3.8559-12.1579-5.7805-25.3428-5.7805-39.5545Z" />
+                </svg>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Home <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3>HexaSync Integration <br>Platform</h3>
+                                    <p>Expand connectivity to resolve operational issues</p>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Products <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group align-content-center">
+                                    <h3>HexaSync Integration <br>Platform</h3>
+                                    <p>Expand connectivity to resolve operational issues</p>
+                                </div>
+                                <div>
+                                    <div class="dropdown__group col">
+                                        <h4>Ecommerce Integration</h4>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <div class="card-navmenu icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                                                    <img src="./assets/image/shopify.png" class="bi" width="60%" alt="">
+                                                </div>
+                                                <a class="align-content-center dropdown__link" href="#">Shopify</a>
+                                            </li>
+                                            <li>
+                                                <div class="card-navmenu icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                                                    <img src="./assets/image/shopify.png" class="bi" width="60%" alt="">
+                                                </div>
+                                                <a class="align-content-center dropdown__link" href="#">Bigcommerce</a>
+                                            </li>
+                                            <li>
+                                                <div class="card-navmenu icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                                                    <img src="./assets/image/shopify.png" class="bi" width="60%" alt="">
+                                                </div>
+                                                <a class="align-content-center dropdown__link" href="#">Woocomerce</a>
+                                            </li>
+                                            <li>
+                                                <div class="card-navmenu icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                                                    <img src="./assets/image/shopify.png" class="bi" width="60%" alt="">
+                                                </div>
+                                                <a class="align-content-center dropdown__link" href="#">WIX</a>
+                                            </li>
+                                            <li>
+                                                <div class="card-navmenu icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+                                                    <img src="./assets/image/shopify.png" class="bi" width="60%" alt="">
+                                                </div>
+                                                <a class="align-content-center dropdown__link" href="#">Magento</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown__group col">
+                                        <h3>POS Integration</h3>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">HTML for beginners</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Advanced CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown__group col">
+                                        <h3>Accounting Integration</h3>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Shopify</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Advanced CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown__group col">
+                                        <h3>ERP Integration</h3>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">HTML for beginners</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Advanced CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown__group col">
+                                        <h3>CRM Integration</h3>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">HTML for beginners</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Advanced CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown__group col">
+                                        <h3>Marketplace Integration</h3>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">HTML for beginners</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Advanced CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Pricing</a>
+                    </li>
+                    <!--=============== DROPDOWN 3 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class="dropdown__container">
+                            <div class="dropdown__content">
+                                <div class="dropdown__group">
+                                    <h3>HexaSync Integration <br>Platform</h3>
+                                    <p>Expand connectivity to resolve operational issues</p>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h3>Title</h3>
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">HTML for beginners</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Advanced CSS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">JavaScript OOP</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="bg-primary-darkblue text-white pb-xxl-5 pt-xxl-5">
+            <div class="bd-content container-xxl bd-gutter masthead-followup">
+                <section>
+                    <div class="row pb-xxl-5 pt-xxl-5">
+                        <div class="col-sm-3">
+                            <div class="d-md-flex gap-4">
+                                <div class="inner-box ">
+                                    <img src="./assets/image/shopify.png" width="100%" alt="Shopify">
+                                </div>
+                                <div class="inner-box ">
+                                    <img src="./assets/image/business-central.png" width="100%" alt="bc">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h1 class="display-4 fw-bold">Shopify Dynamics 365 Business Central Integration</h1>
+                            <p class="fs-4 lead">Shopify integrations couldn’t be easier with the HexaSync platform’s
+                                robust Shopify connector Which connects any services without
+                                the need for separate integrations tools</p>
+                            <div class="d-grid gap-2 d-md-flex my-sm-4">
+                                <button type="button"
+                                    class="btn button-orange btn-lg px-4 me-md-2 d-md-flex d-flex gap-2 mb-3 justify-content-center">Register
+                                    an
+                                    Account </button>
+                                <button type="button" onclick="location.href='https://app.hexasync.com/login';"
+                                    class="btn btn-primary btn-lg px-4 me-md-2 d-md-flex d-flex gap-2 mb-3 align-items-center justify-content-center">
+                                    <div class="card py-2 px-2 me-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24"
+                                            width="16">
+                                            <path
+                                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                                fill="#4285F4"></path>
+                                            <path
+                                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                                fill="#34A853"></path>
+                                            <path
+                                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                                fill="#FBBC05"></path>
+                                            <path
+                                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                                fill="#EA4335"></path>
+                                            <path d="M1 1h22v22H1z" fill="none"></path>
+                                        </svg>
+                                    </div>
+                                    Get Started with Google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div class="container-xxl bd-gutter masthead-followup mt-xxl-6">
+            <p class="pb-xxl-2 h5">Our most popular template</p>
+            <div class="mb-4 ">
+                <div class="row">
+                    <div class="col-lg-4 content" style="display: block;">
+                        <div class="card mb-4 p-4">
+                            <div class="col d-md-flex">
+                                <div
+                                    class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                    <img src="./assets/image/business-central.png" class="bi" width="60px" height="60px"
+                                        alt="">
+                                </div>
+                                <div
+                                    class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                    <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text content" style="display: block;">
+                                <h4 class="align-text-bottom my-sm-4">Sync Sales Orders</h4>
+                                <p>Dynamics 365 Business Central - Shopify</p>
+                                <a href="">Register An Account</a>
+                            </div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 content" style="display: block;">
+                        <div class="card mb-4 p-4">
+                            <div class="col d-md-flex">
+                                <div
+                                    class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                    <img src="./assets/image/business-central.png" class="bi" width="60px" height="60px"
+                                        alt="">
+                                </div>
+                                <div
+                                    class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                    <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text content" style="display: block;">
+                                <h4 class="align-text-bottom my-sm-4">Sync Sales Orders</h4>
+                                <p>Dynamics 365 Business Central - Shopify</p>
+                                <a href="">Register An Account</a>
+                            </div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4 content" style="display: block;">
+                        <div class="card mb-4 p-4">
+                            <div class="col d-md-flex">
+                                <div
+                                    class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                    <img src="./assets/image/business-central.png" class="bi" width="60px" height="60px"
+                                        alt="">
+                                </div>
+                                <div
+                                    class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                    <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                </div>
+                            </div>
+                            <div class="item-text content" style="display: block;">
+                                <h4 class="align-text-bottom my-sm-4">Sync Customers</h4>
+                                <p>Dynamics 365 Business Central - Shopify</p>
+                                <a href="">Register An Account</a>
+                            </div>
+                        </div>
+                    </div><!-- /.col-lg-4 -->
+                </div>
+            </div>
+            <section>
+                <p class="text-center pt-xxl-2 fs-4">Top companies trust HexaSync to automate workflow </p>
+                <div class="wrapper">
+                    <div class="item item1"><img src="./assets/image/indmar..png" width="100%" alt="indmar"></div>
+                    <div class="item item2"><img src="./assets/image/bakes.png" width="100%" alt="bakes"></div>
+                    <div class="item item3"><img src="./assets/image/DIAG.png" width="100%" alt="Diag"></div>
+                    <div class="item item4"><img src="./assets/image/Benchmark.png" width="100%" alt="Benchmark"></div>
+                    <div class="item item5"><img src="./assets/image/MELISSA.png" width="100%" alt="melissa"></div>
+                    <div class="item item6"><img src="./assets/image/CUSTOMPLUS.png" width="100%" alt="customplus">
+                    </div>
+                    <div class="item item7"><img src="./assets/image/MELISSA.png" width="100%" alt="mykingdoom"></div>
+                    <div class="item item8 "><img src="./assets/image/DIAG.png" width="100%" alt="aqua"></div>
+                </div>
+                <section></section>
+            </section>
+        </div>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <h2 class="fw-bold"> Set Up Shopify Dynamics business-central Integration in 3 Steps</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./assets/image/image-step.png" alt="imgtest">
+                            <div class="card-body p-4">
+                                <h3>Step 1: Verify data</h3>
+                                <p class="card-text">Transferring data, files, or information is ideal for uncomplicated procedures. It's efficient and practical for handling straightforward tasks.</p>
+                                <hr class="my-4">
+                                <button type="button" class="arrow-button btn btn-primary">Learn more<span class="arrow"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./assets/image/image-step.png" alt="imgtest">
+                            <div class="card-body p-4">
+                                <h3>Step 2: Demo</h3>
+                                <p class="card-text">Based on the common requirements for each type of integration, we will deliver a simple demonstration for the systems as requested.</p>
+                                <hr class="my-4">
+                                <button type="button" class="arrow-button btn btn-primary">Learn more<span class="arrow"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./assets/image/image-step.png" alt="imgtest">
+                            <div class="card-body p-4">
+                                <h3>Step 3: Deployment</h3>
+                                <p class="card-text">Once the integration scope is confirmed, we will adjust our demo profile to fulfill your business requirements and then deploy it for usage.</p>
+                                <hr class="my-4">
+                                <button type="button" class="arrow-button btn btn-primary">Learn more<span class="arrow"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-xxl bd-gutter masthead-followup ">
+            <section>
+                <div class="bd-content pb-xxl-5 pt-xxl-5">
+                    <div>
+                        <h2 class="display-3 fw-bold">Get Started with Pre-built <br> Shopify Integration Templates
+                        </h2>
+                        <p class="fs-5 col-md-10 my-sm-4 lead mb-4">Save time and simplify your workflow with our
+                            ready-to-use Shopify integration templates. eliminating the need for complex setups.</p>
+                        <div class="mb-4 ">
+                            <div class="row ">
+                                <div class="col-lg-4 content" style="display: block;">
+                                    <div class="card mb-4 p-4">
+                                        <div class="col d-md-flex">
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/business-central.png" class="bi" width="60px" height="60px" alt="">
+                                            </div>
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-text content" style="display: block;">
+                                            <h4 class="align-text-bottom my-sm-4">Sync Sales Orders</h4>
+                                            <p>Dynamics 365 Business Central - Shopify</p>
+                                            <a href="">Register An Account</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-lg-4 content" style="display: block;">
+                                    <div class="card mb-4 p-4">
+                                        <div class="col d-md-flex">
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/business-central.png" class="bi" width="60px" height="60px" alt="">
+                                            </div>
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-text content" style="display: block;">
+                                            <h4 class="align-text-bottom my-sm-4">Sync Sales Orders</h4>
+                                            <p>Dynamics 365 Business Central - Shopify</p>
+                                            <a href="">Register An Account</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-lg-4 content" style="display: block;">
+                                    <div class="card mb-4 p-4">
+                                        <div class="col d-md-flex">
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/business-central.png" class="bi" width="60px" height="60px" alt="">
+                                            </div>
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-text content" style="display: block;">
+                                            <h4 class="align-text-bottom my-sm-4">Sync Customers</h4>
+                                            <p>Dynamics 365 Business Central - Shopify</p>
+                                            <a href="">Register An Account</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-lg-4 content" style="display: block;">
+                                    <div class="card mb-4 p-4">
+                                        <div class="col d-md-flex">
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/quickbook.png" class="bi" width="60px" height="60px" alt="">
+                                            </div>
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-text content" style="display: block;">
+                                            <h4 class="align-text-bottom my-sm-4">Sync Inventory</h4>
+                                            <p>Shopify - QuickBooks </p>
+                                            <a href="">Register An Account</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-lg-4 content" style="display: block;">
+                                    <div class="card mb-4 p-4">
+                                        <div class="col d-md-flex">
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/quickbook.png" class="bi" width="60px" height="60px" alt="">
+                                            </div>
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-text">
+                                            <h4 class="align-text-bottom my-sm-4">Sync Price</h4>
+                                            <p>Shopify - QuickBooks</p>
+                                            <a href="">Register An Account</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.col-lg-4 -->
+                                <div class="col-lg-4 content " style="display: block;">
+                                    <div class="card mb-4 p-4">
+                                        <div class="col d-md-flex">
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/business-central.png" class="bi" width="60px" height="60px" alt="">
+                                            </div>
+
+                                            <div class="icon-square text-body-emphasis bg-body-primary border d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 card-AppIntegrationBrowser">
+                                                <img src="./assets/image/shopify.png" class="bi" width="60px" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="item-text">
+                                            <h4 class="align-text-bottom my-sm-4">Sync Price</h4>
+                                            <p>Shopify - Dynamics 365 business central</p>
+                                            <a href="">Register An Account</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" id="loadMore">Load More</a>
+                </div>
+            </section>
+            <section class="bg-primary-cta text-white rounded ">
+                <div class="bd-content pb-xxl-5 pt-xxl-5">
+                    <div class="d-md-flex gap-4 justify-content-center">
+                        <div class="inner-box ">
+                            <img src="./assets/image/shopify.png" width="100%" alt="Shopify">
+                        </div>
+                        <div class="inner-box ">
+                            <img src="./assets/image/business-central.png" width="100%" alt="bc">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="text-center">
+                            <h2 class="display-5">Unleash the full potential of integration by connecting Shopify and 365 Business Central</h2>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex my-sm-4  justify-content-center ">
+                        <button type="button" class="btn button-orange btn-lg px-4 me-md-2 d-md-flex d-flex gap-2 mb-3 justify-content-center">Register
+                            an
+                            Account </button>
+                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 d-md-flex d-flex gap-2 mb-3 align-items-center justify-content-center">
+                            <span class="card py-2 px-2 me-md-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
+                                    <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"></path>
+                                    <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"></path>
+                                    <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"></path>
+                                    <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"></path>
+                                    <path d="M1 1h22v22H1z" fill="none"></path>
+                                </svg>
+                            </span>
+                            Get Started with Google
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="pt-5 bg-primary-darkblue">
+        <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
+                        aria-label="Bootstrap">
+                        <svg width="150" height="32" xmlns="http://www.w3.org/2000/svg"
+                            id="uuid-1deb3b2f-3aba-43c4-8d84-69438d6d62c3" viewBox="0 0 874 246.9">
+                            <defs>
+                                <style>
+                                    .uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a {
+                                        fill: #fcb017;
+                                        stroke-width: 0px;
+                                    }
+                                </style>
+                            </defs>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M365.1,143.6c0,7-1,13.4-3.1,19-2.1,5.6-5,10.5-8.9,14.5-3.9,4-8.5,7.1-14,9.2-5.5,2.1-11.7,3.2-18.6,3.2s-13.1-.5-19.2-1.5c-6.1-1-11.2-2.1-15.2-3.4V60.6l20.3-3.4v45.4c2.3-1.2,5.2-2.3,8.6-3.4,3.4-1,7.2-1.5,11.3-1.5,6.1,0,11.7,1.1,16.5,3.3,4.9,2.2,8.9,5.3,12.2,9.3,3.2,4,5.7,8.9,7.5,14.5,1.7,5.6,2.6,11.9,2.6,18.7ZM344.3,143.3c0-8.6-1.7-15.4-5.1-20.5-3.4-5-8.8-7.5-16.2-7.5s-6.5.5-9.5,1.5c-3,1-5.3,2.1-7.1,3.4v50.5c1.4.3,3.3.6,5.6.9,2.3.3,5.1.4,8.3.4,7.5,0,13.4-2.5,17.6-7.6,4.2-5.1,6.4-12.1,6.4-21Z">
+                            </path>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M372.8,144c0-7.7,1.1-14.5,3.4-20.3,2.3-5.8,5.3-10.6,9.1-14.5,3.8-3.9,8.2-6.8,13.1-8.7,4.9-2,9.9-2.9,15.1-2.9,12.1,0,21.5,3.7,28.3,11.2,6.8,7.5,10.1,18.7,10.1,33.5s0,2.4,0,3.8c0,1.4-.1,2.7-.3,3.8h-57.9c.6,7,3,12.5,7.5,16.3,4.4,3.9,10.8,5.8,19.2,5.8s9.4-.4,13.5-1.3c4.1-.9,7.3-1.8,9.6-2.8l2.7,16.6c-1.1.6-2.7,1.1-4.6,1.8-2,.6-4.2,1.2-6.7,1.7-2.5.5-5.2.9-8.1,1.3-2.9.3-5.9.5-8.9.5-7.7,0-14.4-1.1-20.1-3.4-5.7-2.3-10.4-5.5-14.1-9.6-3.7-4.1-6.4-8.9-8.2-14.4-1.8-5.5-2.7-11.6-2.7-18.2ZM431.6,134.9c0-2.8-.4-5.5-1.2-8-.8-2.5-1.9-4.7-3.4-6.5-1.5-1.8-3.4-3.3-5.5-4.4-2.2-1.1-4.8-1.6-7.8-1.6s-5.9.6-8.2,1.8c-2.3,1.2-4.3,2.7-6,4.6-1.6,1.9-2.9,4.1-3.8,6.5-.9,2.5-1.5,5-1.8,7.5h37.7Z">
+                            </path>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M460.1,144c0-7.7,1.1-14.5,3.4-20.3,2.3-5.8,5.3-10.6,9.1-14.5,3.8-3.9,8.2-6.8,13.1-8.7,4.9-2,9.9-2.9,15.1-2.9,12.1,0,21.5,3.7,28.3,11.2,6.8,7.5,10.1,18.7,10.1,33.5s0,2.4,0,3.8c0,1.4-.1,2.7-.3,3.8h-57.9c.6,7,3,12.5,7.5,16.3,4.4,3.9,10.8,5.8,19.2,5.8s9.4-.4,13.5-1.3c4.1-.9,7.3-1.8,9.6-2.8l2.7,16.6c-1.1.6-2.7,1.1-4.6,1.8-2,.6-4.2,1.2-6.7,1.7-2.5.5-5.2.9-8.1,1.3-2.9.3-5.9.5-8.9.5-7.7,0-14.4-1.1-20.1-3.4-5.7-2.3-10.4-5.5-14.1-9.6-3.7-4.1-6.4-8.9-8.2-14.4-1.8-5.5-2.7-11.6-2.7-18.2ZM519,134.9c0-2.8-.4-5.5-1.2-8-.8-2.5-1.9-4.7-3.4-6.5-1.5-1.8-3.4-3.3-5.5-4.4-2.2-1.1-4.8-1.6-7.8-1.6s-5.9.6-8.2,1.8-4.3,2.7-6,4.6c-1.6,1.9-2.9,4.1-3.8,6.5-.9,2.5-1.5,5-1.8,7.5h37.7Z">
+                            </path>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M552.4,187.4V60.6l20.3-3.4v43.4c2.2-.8,4.8-1.5,7.8-2,3-.6,5.9-.8,8.8-.8,7,0,12.9,1,17.5,2.9,4.6,2,8.4,4.7,11.2,8.2,2.8,3.5,4.8,7.7,6,12.7,1.2,4.9,1.8,10.4,1.8,16.4v49.3h-20.3v-46.1c0-4.7-.3-8.7-.9-12-.6-3.3-1.6-6-3-8.1-1.4-2.1-3.3-3.6-5.6-4.5s-5.3-1.4-8.7-1.4-5.4.3-8.2.8c-2.8.6-4.9,1.1-6.2,1.5v69.8h-20.3Z">
+                            </path>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M636.7,144c0-7.7,1.1-14.5,3.4-20.3,2.3-5.8,5.3-10.6,9.1-14.5,3.8-3.9,8.2-6.8,13.1-8.7,4.9-2,9.9-2.9,15.1-2.9,12.1,0,21.5,3.7,28.3,11.2,6.8,7.5,10.1,18.7,10.1,33.5s0,2.4,0,3.8c0,1.4-.1,2.7-.3,3.8h-57.9c.6,7,3,12.5,7.5,16.3,4.4,3.9,10.8,5.8,19.2,5.8s9.4-.4,13.5-1.3c4.1-.9,7.3-1.8,9.6-2.8l2.7,16.6c-1.1.6-2.7,1.1-4.6,1.8-2,.6-4.2,1.2-6.7,1.7-2.5.5-5.2.9-8.1,1.3-2.9.3-5.9.5-8.9.5-7.7,0-14.4-1.1-20.1-3.4-5.7-2.3-10.4-5.5-14.1-9.6-3.7-4.1-6.4-8.9-8.2-14.4-1.8-5.5-2.7-11.6-2.7-18.2ZM695.6,134.9c0-2.8-.4-5.5-1.2-8-.8-2.5-1.9-4.7-3.4-6.5-1.5-1.8-3.4-3.3-5.5-4.4-2.2-1.1-4.8-1.6-7.8-1.6s-5.9.6-8.2,1.8-4.3,2.7-6,4.6c-1.6,1.9-2.9,4.1-3.8,6.5-.9,2.5-1.5,5-1.8,7.5h37.7Z">
+                            </path>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M760.4,126.6l18.6-26.9h21.3l-29.5,42c6.2,7.7,12.1,15.5,17.7,23.4,5.6,7.9,10.3,15.3,13.9,22.3h-22.1c-1-2.1-2.3-4.3-3.9-6.8-1.6-2.5-3.3-5-5.2-7.7-1.8-2.7-3.8-5.3-5.7-7.9-2-2.6-3.9-5.1-5.8-7.4-3.9,4.6-7.8,9.6-11.5,15.1-3.8,5.5-6.9,10.4-9.3,14.7h-20.7c1.7-3.4,3.7-6.9,6.1-10.6,2.4-3.7,5-7.5,7.8-11.4,2.8-3.9,5.6-7.8,8.5-11.7,2.9-3.9,5.8-7.6,8.7-11.1l-29.8-42.9h22.3l18.6,26.9Z">
+                            </path>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M838.5,97.5c6.7,0,12.3.8,16.9,2.5,4.6,1.7,8.2,4,11,7,2.7,3,4.7,6.7,5.9,11,1.2,4.3,1.8,9,1.8,14.2v53.2c-3.1.7-7.9,1.5-14.2,2.4-6.3.9-13.4,1.4-21.4,1.4s-10.1-.5-14.4-1.5c-4.4-1-8.1-2.6-11.2-4.9-3.1-2.2-5.5-5.1-7.2-8.7-1.7-3.6-2.6-8-2.6-13.2s1-9.3,2.9-12.7c2-3.5,4.6-6.3,8-8.5,3.4-2.2,7.2-3.7,11.7-4.7,4.4-.9,9-1.4,13.8-1.4s4.6.1,7,.4c2.5.3,5.1.8,7.9,1.4v-3.4c0-2.3-.3-4.6-.8-6.7-.6-2.1-1.5-4-2.9-5.6-1.4-1.6-3.2-2.9-5.5-3.8-2.3-.9-5.2-1.3-8.6-1.3s-9,.3-12.9,1c-3.9.7-7.1,1.5-9.6,2.3l-2.5-16.4c2.6-.9,6.3-1.8,11.2-2.7,4.9-.9,10.2-1.3,15.8-1.3ZM840.1,173.2c6.3,0,11-.3,14.3-1v-22.5c-1.1-.3-2.7-.7-4.9-1-2.1-.3-4.5-.5-7-.5s-4.5.2-6.8.5c-2.3.3-4.4.9-6.2,1.8s-3.3,2.2-4.4,3.8c-1.1,1.6-1.7,3.7-1.7,6.1,0,4.8,1.5,8.1,4.5,10s7.1,2.8,12.2,2.8Z">
+                            </path>
+                            <path class="uuid-46849dce-633d-4f40-89f2-5bd3a0dee88a"
+                                d="M106.4,0L0,61.7v123.4l106.4,61.7,106.4-61.7V61.7L106.4,0ZM106.3,22.6l81.5,47.3-81.5,47.3L24.9,69.9,106.3,22.6ZM192.5,172.4l-86.1,50.1-86.1-49.6v-29.5l86.1,49.6,86.1-50.1v29.5ZM192.5,119.7l-86.1,50.1L20.3,119.7v-29.5l86.2,50.1,86.1-50.1v29.5Z">
+                            </path>
+                        </svg>
+                    </a>
+                    <ul class="list-unstyled small text-white">
+                        <li class="mb-2">651 N Broad St Suite 201, Middletown, Delaware, USA, 19709.</li>
+                        <li class="mb-2">sales@beehexa.com</li>
+                        <li class="mb-2">+1 (765) 740-4475</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3 text-white">
+                    <h5>Popular Apps</h5>
+                    <ul class="list-unstyled ">
+                        <li class="mb-2">Shopify</li>
+                        <li class="mb-2">Microsoft Dynamics business-central</li>
+                        <li class="mb-2">Ecwid</li>
+                        <li class="mb-2">Shopee</li>
+                        <li class="mb-2">Acumatica</li>
+                        <li class="mb-2">tiktok-shop</li>
+                        <li class="mb-2">Quickbook</li>
+                        <li class="mb-2"><ins>Showmore</ins></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 text-white">
+                    <h5>Pricing</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Free</li>
+                        <li class="mb-2">Professional</li>
+                        <li class="mb-2">Team</li>
+                        <li class="mb-2">Enterprise</li>
+                        <li class="mb-2"><ins>Showmore</ins></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 text-white">
+                    <h5>Comapany</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Partners</li>
+                        <li class="mb-2">About HexaSync</li>
+                        <li class="mb-2">Success Story</li>
+                        <li class="mb-2"><ins>Showmore</ins></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3 text-white">
+                    <h5>Help</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Getting Started</li>
+                        <li class="mb-2">Chatbots</li>
+                        <li class="mb-2">Videos</li>
+                        <li class="mb-2"><ins>App+</ins></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-white"> Created by the HexaSync team &middot; &copy; 2024</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/loadmorebutton.js"></script>
+    <script src="./assets/js/slider.js"></script>
+</body>
+
+</html>

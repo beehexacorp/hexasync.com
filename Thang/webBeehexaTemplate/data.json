@@ -1,0 +1,13 @@
+{
+    "name" : "Shopify",
+    "colorCode" : "white",
+    "imageLink" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcZ-gOM09kxub5N8KzZ-tvtqOekS0_wA-Pmg&s",
+    "faq" : [
+        "Shopify is a comprehensive e-commerce platform that allows users to create, manage, and grow online stores. It provides tools for design, product management, payment processing, and marketing.",
+        "You can integrate with Shopify using various APIs such as the REST Admin API and Storefront API, or by using pre-built apps available in the Shopify App Store.",
+        "Integrating with Shopify offers benefits like access to a large customer base, streamlined operations, customizable storefronts, robust security, and a wide range of third-party apps and services.",
+        "Shopify API Integration involves using Shopify's APIs to connect your app or service with Shopify, enabling functionality such as managing products, orders, customers, and storefront customization.",
+        "To connect to Shopify, you need to create a Shopify app, obtain API credentials, and use the API to interact with your Shopify store. Detailed steps are available in Shopify’s developer documentation.",
+        "Shopify can integrate with various third-party services and tools, including payment gateways, shipping providers, CRM systems, marketing platforms, and social media channels."
+    ]
+}
