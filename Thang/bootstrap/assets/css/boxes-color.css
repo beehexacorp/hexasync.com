@@ -8,8 +8,9 @@
 
 .outer-box.outer-box-red {
   background-color: rgb(215, 30, 37);
-  
-} 
+
+}
+
 .btn.button-orange {
   --bs-btn-color: #000000;
   --bs-btn-bg: #ffc107;
@@ -28,41 +29,51 @@
 }
 
 .bg-primary-darkblue {
-  background: radial-gradient(90% 106.38% at 122.89% 49.97%,#0000fa 0,#0025dc 9%,#0c00ad 25%,#090086 41%,#020067 56%,#080052 72%,#0e0045 86%,rgb(0, 24, 64) 100%);
-    color: #fff;
-    background-size: 300%;
-    animation: Gradient 5s ease-in-out 0s infinite alternate !important;
+  background: radial-gradient(90% 106.38% at 122.89% 49.97%, #0000fa 0, #0025dc 9%, #0c00ad 25%, #090086 41%, #020067 56%, #080052 72%, #0e0045 86%, rgb(0, 24, 64) 100%);
+  color: #fff;
+  background-size: 300%;
+  animation: Gradient 5s ease-in-out 0s infinite alternate !important;
 }
+
 @keyframes Gradient {
   0% {
-      background-position: 0
+    background-position: 0
   }
 
   to {
-      background-position: 100%
+    background-position: 100%
   }
 }
-.bg-primary-icon{
-  background-color: rgb(255, 255, 255); !important;
+
+.bg-primary-icon {
+  background-color: rgb(255, 255, 255);
+  !important;
 }
+
 .bg-primary-gray {
-  background-color: #E6ECF5; !important;
+  background-color: #d1e8fc2f;
+  !important;
 }
+
 .bg-primary-white {
-  background-color: #ffffff; !important;
+  background-color: #ffffff;
+  !important;
 }
 
 .outer-box.outer-box-blue {
   background-color: rgb(0, 96, 255);
 }
+
 .outer-box.outer-box-orange {
   background-color: rgb(255, 51, 0);
 }
+
 .bg-primary-cta {
   background-color: rgb(0, 14, 94);
 }
+
 .card-AppIntegrationBrowser {
-  border-radius: 8px;
+  border-radius: 2px;
   border: 1px solid #cccccc;
   background-color: #ffffff;
   display: flex;
@@ -71,12 +82,14 @@
   box-sizing: border-box;
   transition: all linear 200ms;
 }
+
 .card-AppIntegrationBrowser:hover {
   transform: scale(1.01);
   transition: all linear 500ms;
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
 }
+
 .card-navmenu {
   border-radius: 8px;
   border: 1px solid #282828;
@@ -87,18 +100,22 @@
   box-sizing: border-box;
   transition: all linear 200ms;
 }
+
 .bd-content {
   grid-area: content;
   min-width: 1px
 }
+
 .bd-gutter {
   --bs-gutter-x: 3rem
 }
+
 .card-icon img {
   width: 50px;
   height: 50px;
   border-radius: 8px;
 }
+
 .h5:hover {
   color: rgb(0, 81, 255);
 }
@@ -115,7 +132,7 @@
   border: 1px solid #3b3b3b;
 }
 
-.card-header{
+.card-header {
   width: 150px;
   height: 150px;
   box-shadow: 0 3.2px 7.2px 0 rgba(0, 0, 0, .132), 0 .6px 1.8px 0 rgba(0, 0, 0, .108);
@@ -135,12 +152,14 @@
   transform: scale(1.01);
   transition: all linear 500ms;
 }
+
 .effect:hover .card-AppIntegrationBrowser {
   transform: scale(1.01);
   transition: all linear 100ms;
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
 }
+
 .effect:hover .item-text h5 {
   color: #1c0097;
   transform: scale(1.01);
@@ -148,6 +167,7 @@
   transform: scale(1.05);
   z-index: 1;
 }
+
 *,
 *::before,
 *::after {
@@ -159,19 +179,17 @@
 }
 
 .wrapper {
-  width: 90%;
+  width: 100%;
   max-width: 1536px;
   margin-inline: auto;
   position: relative;
   height: 100px;
   overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0)
-  );
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0));
 }
 
 @keyframes scrollLeft {
@@ -181,20 +199,18 @@
 }
 
 .wrapper {
-  margin-top: 2rem;
-  width: 90%;
+  margin-top: 1rem;
+  width: 100%;
   max-width: 1536px;
   margin-inline: auto;
   height: 100px;
   position: relative;
   overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0)
-  );
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0));
 }
 
 @keyframes scrollLeft {
@@ -211,8 +227,8 @@
 
 .itemLeft,
 .itemRight {
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 50px;
   border-radius: 6px;
   position: absolute;
   animation-timing-function: linear;
@@ -269,9 +285,13 @@
   align-items: center;
 }
 
+/*======================
+   Load-more
+========================*/
 .content {
   display: none;
 }
+
 #loadMore {
   width: 200px;
   color: #fff;
@@ -281,15 +301,17 @@
   padding: 10px;
   border-radius: 3px;
   border: 0.5px solid transparent;
-  background-color:#0d6efd;
+  background-color: #0d6efd;
   transition: .3s;
 }
+
 #loadMore:hover {
-  color:#0d6efd;
+  color: #0d6efd;
   background-color: #fff;
   border: 0.5px solid#0d6efd;
   text-decoration: none;
 }
+
 .noContent {
   color: #00000000 !important;
   background-color: transparent !important;
@@ -299,6 +321,7 @@
 .mySlides {
   display: none;
 }
+
 .slideshow-container {
   max-width: auto;
 }
@@ -312,18 +335,78 @@
    Text-Typing
 ========================*/
 
-.container .text{
+.container .text {
   position: relative;
   color: #ffffff;
 }
-.container .text.first-text{
+
+.container .text.first-text {
   color: #FFF;
 }
-@keyframes animate{
-  40%, 60%{
-      left: calc(100% + 4px);
+
+@keyframes animate {
+
+  40%,
+  60% {
+    left: calc(100% + 4px);
   }
-  100%{
-      left: 0%;
+
+  100% {
+    left: 0%;
+  }
+}
+
+/*======================
+   Card-deck
+========================*/
+.card-builder {
+  padding: 42px 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 253, 249, 0.3);
+  border-radius: 2px;
+  text-align: left;
+}
+
+.card-builder-ver2 {
+  padding: 42px 30px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(0, 2, 124);
+  border-radius: 2px;
+  text-align: left;
+}
+
+/*======================
+  background-cta 
+========================*/
+.background-image {
+  background-image: url(integrations-3d-min.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-size: 100%;
+
+}
+
+/*======================
+Text
+========================*/
+.text-Title {
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .text-Title {
+    font-size: 3rem;
+  }
+}
+.text-header{
+  font-size: 7rem;
+}
+
+@media (max-width: 768px) {
+  .text-header {
+    font-size: 4rem;
   }
 }
