@@ -410,3 +410,17 @@ Text
     font-size: 4rem;
   }
 }
+
+.ytp-cued-thumbnail-overlay-image {
+  width: 1296px; 
+}
+@media (max-width: 1366px) {
+  .ytp-cued-thumbnail-overlay-image {
+    width: 990px;
+  }
+}
+@media (max-width: 768px) {
+  .ytp-cued-thumbnail-overlay-image {
+    width: 406px;
+  }
+}
