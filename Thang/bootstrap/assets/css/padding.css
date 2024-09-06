@@ -21,6 +21,22 @@
     padding-bottom: 3rem;
   }
 }
+.ptb-com {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 1280px) {
+  .ptb-com {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 560px) {
+  .ptb-com {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
 .ptb-xxl-6 {
   padding-top: 2rem;
   padding-bottom: 2rem;

@@ -51,8 +51,7 @@
 }
 
 .bg-primary-gray {
-  background-color: #d1e8fc2f;
-  !important;
+  background-color: #d1e8fc2f; !important;
 }
 
 .bg-primary-white {
@@ -401,6 +400,16 @@ Text
     font-size: 3rem;
   }
 }
+.text-Sub {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .text-Sub {
+    font-size: 1rem;
+  }
+}
 .text-header{
   font-size: 7rem;
 }
@@ -411,16 +420,4 @@ Text
   }
 }
 
-.ytp-cued-thumbnail-overlay-image {
-  width: 1296px; 
-}
-@media (max-width: 1366px) {
-  .ytp-cued-thumbnail-overlay-image {
-    width: 990px;
-  }
-}
-@media (max-width: 768px) {
-  .ytp-cued-thumbnail-overlay-image {
-    width: 406px;
-  }
-}
+
