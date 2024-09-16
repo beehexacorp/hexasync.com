@@ -1,16 +1,7 @@
-.outer-box.outer-box-green {
-  background-color: rgb(44, 160, 28);
+
+.change-my-color {
+  fill:rgb(0, 96, 255);;
 }
-
-.outer-box.outer-box-dark-green {
-  background-color: rgb(0, 143, 153);
-}
-
-.outer-box.outer-box-red {
-  background-color: rgb(215, 30, 37);
-
-}
-
 .btn.button-orange {
   --bs-btn-color: #000000;
   --bs-btn-bg: #ffc107;
@@ -70,9 +61,12 @@
 .bg-primary-cta {
   background-color: rgb(0, 14, 94);
 }
+.bg-primary-header {
+  background-color: #06034C;
+}
 
 .card-AppIntegrationBrowser {
-  border-radius: 2px;
+  border-radius: 4px;
   border: 1px solid #cccccc;
   background-color: #ffffff;
   display: flex;
@@ -84,7 +78,7 @@
 
 .card-AppIntegrationBrowser:hover {
   transform: scale(1.01);
-  transition: all linear 500ms;
+  transition: all linear 50ms;
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
 }
@@ -124,13 +118,16 @@
 }
 
 .card:hover {
-  transform: scale(1.01);
-  transition: all linear 500ms;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
   z-index: 1;
   box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
-  border: 1px solid #3b3b3b;
+  background-color: #fffdf9;
 }
 
+.h4:hover {
+  color: white;
+}
 .card-header {
   width: 150px;
   height: 150px;
@@ -375,17 +372,38 @@
   border-radius: 2px;
   text-align: left;
 }
-
+.card-builder-Slider {
+  height: 70px;
+  width: 200px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #bcbcbc;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  align-items: center;
+  justify-content: center;
+}
 /*======================
   background-cta 
 ========================*/
 .background-image {
   background-image: url(integrations-3d-min.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  background-size: 100%;
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
 
+}
+.image-cta {
+  background-image: url(image-cta_.png);
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
 }
 
 /*======================
@@ -420,4 +438,61 @@ Text
   }
 }
 
+.text-header2 {
+  font-size: 6rem;
+}
 
+@media (max-width: 768px) {
+  .text-header2 {
+    font-size: 3rem;
+  }
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+/*======================
+   Arrow
+========================*/
+
+html,
+
+
+
+.link {
+	color: link-blue;
+	cursor: pointer;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+.link--arrowed {
+	display: inline-block;
+	height: 2rem;
+	line-height: 2rem;
+
+	.arrow-icon {
+		position: relative;
+		top: -1px;
+		-webkit-transition: -webkit-transform 0.3s ease;
+		transition: -webkit-transform 0.3s ease;
+		transition: transform 0.3s ease;
+		transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+		vertical-align: middle;
+	}
+
+	.arrow-icon--circle {
+		transition: stroke-dashoffset 0.3s ease;
+		stroke-dasharray: 95;
+		stroke-dashoffset: 95;
+	}
+
+	&:hover {
+		.arrow-icon {
+			transform: translate3d(5px, 0, 0);
+		}
+
+		.arrow-icon--circle {
+			stroke-dashoffset: 0;
+		}
+	}
+}
