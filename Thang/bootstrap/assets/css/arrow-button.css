@@ -1,7 +1,8 @@
 .arrow-button {
     display: flex;
-    padding: 10px 16px;
-    border-radius: 2px;
+    color: #2a68ee;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
     transition: all .3s ease;
     font-weight: bold;
     cursor: pointer;
@@ -12,8 +13,8 @@
 .arrow-button > .arrow {
     width: 6px;
     height: 6px;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #2a68ee;
+    border-bottom: 2px solid #2a68ee;
     position: relative;
     transform: rotate(-45deg);
     margin: 0 6px;
@@ -46,6 +47,6 @@
 }
 
 .arrow-button:hover {
-    background-color: #003e9b;
+    background-color: #;
     color: #fff;
 }

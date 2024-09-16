@@ -8,7 +8,7 @@
   --first-color-lighten: hsl(220, 68%, 97%);
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 2%); 
-  --body-color: rgb(0, 24, 64);
+  --body-color: #06034C;
   --body-color-dropdown: hsl(0, 0%, 99%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
