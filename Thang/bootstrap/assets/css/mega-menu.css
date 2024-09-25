@@ -173,9 +173,6 @@ a {
   font-weight: initial;
   transition: transform 0.4s;
 }
-.dropdown__content, .dropdown__group, .dropdown__list {
-  display: grid;
-}
 .dropdown__container {
   background-color: var(--first-color-lighten);
   height: 0;
@@ -274,11 +271,11 @@ a {
   .dropdown__content {
     grid-template-columns: repeat(4, max-content);
     column-gap: 7rem;
-    max-width: 1264px;
-    margin-inline: auto;
+    max-width: 1900px;
+    margin-inline: 100px;
   }
   .dropdown__group {
-    padding: 3rem 0;
+    padding: 1rem 0;
     align-content: baseline;
     row-gap: 1.25rem;
   }
