@@ -42,12 +42,16 @@
 }
 
 .bg-primary-gray {
-  background-color: #d1e8fc2f; !important;
+  background-color: #f5faff2f; !important;
 }
 
 .bg-primary-white {
   background-color: #ffffff;
   !important;
+}
+
+.bg-primary-gray {
+  background-color: #e6e6e6;
 }
 
 .outer-box.outer-box-blue {

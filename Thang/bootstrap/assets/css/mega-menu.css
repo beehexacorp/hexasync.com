@@ -9,7 +9,7 @@
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 2%); 
   --body-color: #06034C;
-  --body-color-dropdown: hsl(0, 0%, 99%);
+  --body-color-dropdown: hsl(216, 100%, 99%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Google Sans";
@@ -272,7 +272,6 @@ a {
     grid-template-columns: repeat(4, max-content);
     column-gap: 7rem;
     max-width: 1900px;
-    margin-inline: 100px;
   }
   .dropdown__group {
     padding: 1rem 0;
@@ -313,7 +312,7 @@ a {
     transform: rotate(180deg);
   }
   .dropdown__item:hover > .dropdown__container {
-    top: 5.5rem;
+    top: 6rem;
     opacity: 1;
     pointer-events: initial;
     cursor: initial;
