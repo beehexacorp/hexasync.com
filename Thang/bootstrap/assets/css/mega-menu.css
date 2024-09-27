@@ -4,7 +4,7 @@
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(220, 68%, 54%);
+  --first-color: hsl(231, 100%, 26%);
   --first-color-lighten: hsl(220, 68%, 97%);
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 2%); 
@@ -183,7 +183,7 @@ a {
   row-gap: 1.75rem;
 }
 .dropdown__group {
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   row-gap: 0.5rem;
 }
 .dropdown__group:first-child {
@@ -312,7 +312,7 @@ a {
     transform: rotate(180deg);
   }
   .dropdown__item:hover > .dropdown__container {
-    top: 6rem;
+    top: 5.5rem;
     opacity: 1;
     pointer-events: initial;
     cursor: initial;
