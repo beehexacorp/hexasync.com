@@ -1,0 +1,129 @@
+
+@media (min-width: 1280px) {
+    .mt-xxl-6 {
+        margin-top: -6rem;
+    }
+}
+.ptb-xxlr-5 {
+  padding-left: 9rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 1280px) {
+  .ptb-xxlr-5 {
+    padding-left: 9rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 560px) {
+  .ptb-xxlr-5 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+  }
+}
+.ptb-xxl-5 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+@media (max-width: 1280px) {
+  .ptb-xxl-5 {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+}
+@media (max-width: 560px) {
+  .ptb-xxl-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.ptb-com {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+@media (max-width: 1280px) {
+  .ptb-com {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 560px) {
+  .ptb-com {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+.ptb-xxl-6 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 1280px) {
+  .ptb-xxl-6 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 560px) {
+  .ptb-xxl-6 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.ptb-xxl-7 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+@media (max-width: 1280px) {
+  .ptb-xxl-6 {
+    padding-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  .ptb-xxl-6 {
+    padding-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.px-LRTB {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (max-width: 1280px) {
+  .px-LRTB {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+@media (max-width: 560px) {
+  .px-LRTB {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+.ptb-xxl-card {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+@media (max-width: 1280px) {
+  .ptb-xxl-6 {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+@media (max-width: 560px) {
+  .ptb-xxl-6 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
