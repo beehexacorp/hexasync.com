@@ -186,7 +186,7 @@
   :root {
     scroll-behavior: smooth;
   }
-
+}
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -231,7 +231,7 @@ h3, .h3 {
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 1.75rem;
+    font-size: 1.875rem;
   }
 }
 
@@ -240,7 +240,7 @@ h4, .h4 {
 }
 @media (min-width: 1200px) {
   h4, .h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -8211,7 +8211,11 @@ textarea.form-control-lg {
 .pt-5 {
   padding-top: 3rem !important;
 }
-
+@media (max-width: 330px) {
+  .pt-5 {
+    padding-top: 1rem !important;
+  }
+}
 .pe-0 {
   padding-right: 0 !important;
 }
