@@ -1,0 +1,511 @@
+
+.change-my-color {
+    fill:rgb(0, 96, 255);;
+  }
+  .btn.button-orange {
+    --bs-btn-color: #000000;
+    --bs-btn-bg: #ffc107;
+    --bs-btn-border-color: #ffc107;
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #ffca2c;
+    --bs-btn-hover-border-color: #ffc720;
+    --bs-btn-focus-shadow-rgb: 217, 164, 6;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #ffcd39;
+    --bs-btn-active-border-color: #ffc720;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #ffffff;
+    --bs-btn-disabled-bg: #ffc107;
+    --bs-btn-disabled-border-color: #ffc107;
+  }
+  
+  .bg-primary-darkblue {
+    background: radial-gradient(90% 106.38% at 122.89% 49.97%, #0000fa 0, #0025dc 9%, #0c00ad 25%, #090086 41%, #020067 56%, #080052 72%, #0e0045 86%, rgb(0, 24, 64) 100%);
+    color: #fff;
+    background-size: 300%;
+    animation: Gradient 5s ease-in-out 0s infinite alternate !important;
+  }
+  
+  @keyframes Gradient {
+    0% {
+      background-position: 0
+    }
+  
+    to {
+      background-position: 100%
+    }
+  }
+  
+  .bg-primary-icon {
+    background-color: rgb(255, 255, 255);
+    !important;
+  }
+  
+  .bg-primary-gray {
+    background-color: #f5faff2f; !important;
+  }
+  
+  .bg-primary-white {
+    background-color: #ffffff;
+    !important;
+  }
+  
+  .bg-primary-gray {
+    background-color: #e6e6e6;
+  }
+  
+  .outer-box.outer-box-blue {
+    background-color: rgb(0, 96, 255);
+  }
+  
+  .outer-box.outer-box-orange {
+    background-color: rgb(255, 51, 0);
+  }
+  
+  .bg-primary-cta {
+    background-color: rgb(0, 14, 94);
+  }
+  .bg-primary-header {
+    background-color: #06034C;
+  }
+  
+  .card-AppIntegrationBrowser {
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    transition: all linear 200ms;
+  }
+  
+  .card-AppIntegrationBrowser:hover {
+    transform: scale(1.01);
+    transition: all linear 50ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  }
+  
+  .card-navmenu {
+    border-radius: 3px;
+    background-color: #c3d7fc;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    transition: all linear 200ms;
+  }
+  .card-logo-navmenu {
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    transition: all linear 200ms;
+  }
+  
+  .bd-content {
+    grid-area: content;
+    min-width: 1px
+  }
+  
+  .bd-gutter {
+    --bs-gutter-x: 3rem
+  }
+  
+  .card-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  
+  .h5:hover {
+    color: rgb(0, 81, 255);
+  }
+  
+  .align-content-center {
+    align-content: center;
+  }
+  
+  .card:hover {
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
+    background-color: #fffdf9;
+  }
+  
+  .h4:hover {
+    color: white;
+  }
+  .card-header {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 3.2px 7.2px 0 rgba(0, 0, 0, .132), 0 .6px 1.8px 0 rgba(0, 0, 0, .108);
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+  }
+  
+  .align-items-start:hover .card-AppIntegrationBrowser {
+    transform: scale(1.05);
+    transition: all linear 100ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
+  }
+  
+  .align-items-start:hover .item-text h5 {
+    color: #1c0097;
+    transform: scale(1.01);
+    transition: all linear 500ms;
+  }
+  
+  .effect:hover .card-AppIntegrationBrowser {
+    transform: scale(1.01);
+    transition: all linear 100ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
+  }
+  
+  .effect:hover .item-text h5 {
+    color: #1c0097;
+    transform: scale(1.01);
+    transition: all linear 50ms;
+    transform: scale(1.05);
+    z-index: 1;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0));
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  .wrapper {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0));
+  }
+  
+  @keyframes scrollLeft {
+    to {
+      left: -200px;
+    }
+  }
+  
+  @keyframes scrollRight {
+    to {
+      right: -200px;
+    }
+  }
+  
+  .itemLeft,
+  .itemRight {
+    width: 150px;
+    height: 50px;
+    border-radius: 6px;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+  
+  .itemLeft {
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+  }
+  
+  .itemRight {
+    right: max(calc(200px * 8), calc(100% + 200px));
+    animation-name: scrollRight;
+  }
+  
+  .item1 {
+    animation-delay: calc(30s / 8 * (8 - 1) * -1);
+  }
+  
+  .item2 {
+    animation-delay: calc(30s / 8 * (8 - 2) * -1);
+  }
+  
+  .item3 {
+    animation-delay: calc(30s / 8 * (8 - 3) * -1);
+  }
+  
+  .item4 {
+    animation-delay: calc(30s / 8 * (8 - 4) * -1);
+  }
+  
+  .item5 {
+    animation-delay: calc(30s / 8 * (8 - 5) * -1);
+  }
+  
+  .item6 {
+    animation-delay: calc(30s / 8 * (8 - 6) * -1);
+  }
+  
+  .item7 {
+    animation-delay: calc(30s / 8 * (8 - 7) * -1);
+  }
+  
+  .item8 {
+    animation-delay: calc(30s / 8 * (8 - 8) * -1);
+  }
+  
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*======================
+     Load-more
+  ========================*/
+  .content {
+    display: none;
+  }
+  
+  #loadMore {
+    width: 200px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 3px;
+    border: 0.5px solid transparent;
+    background-color: #0d6efd;
+    transition: .3s;
+  }
+  
+  #loadMore:hover {
+    color: #0d6efd;
+    background-color: #fff;
+    border: 0.5px solid#0d6efd;
+    text-decoration: none;
+  }
+  
+  .noContent {
+    color: #00000000 !important;
+    background-color: transparent !important;
+    pointer-events: none;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .slideshow-container {
+    max-width: auto;
+  }
+  
+  .d-flexver2 {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+  
+  /*======================
+     Text-Typing
+  ========================*/
+  
+  .container .text {
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .container .text.first-text {
+    color: #FFF;
+  }
+  
+  @keyframes animate {
+  
+    40%,
+    60% {
+      left: calc(100% + 4px);
+    }
+  
+    100% {
+      left: 0%;
+    }
+  }
+  
+  /*======================
+     Card-deck
+  ========================*/
+  .card-builder {
+    padding: 42px 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 253, 249, 0.3);
+    border-radius: 2px;
+    text-align: left;
+  }
+  
+  .card-builder-ver2 {
+    padding: 42px 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 2, 124);
+    border-radius: 2px;
+    text-align: left;
+  }
+  .card-builder-Slider {
+    height: 70px;
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bcbcbc;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    align-items: center;
+    justify-content: center;
+  }
+  /*======================
+    background-cta 
+  ========================*/
+  .background-image {
+    background-image: url(integrations-3d-min.png);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+  
+  }
+  .image-cta {
+    background-image: url(image-cta_.png);
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+  }
+  
+  /*======================
+  Text
+  ========================*/
+  .text-Title {
+    font-size: 4rem;
+  }
+  
+  @media (max-width: 768px) {
+    .text-Title {
+      font-size: 3rem;
+    }
+  }
+  .text-Sub {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  @media (max-width: 768px) {
+    .text-Sub {
+      font-size: 1rem;
+    }
+  }
+  .text-header{
+    font-size: 7rem;
+  }
+  
+  @media (max-width: 768px) {
+    .text-header {
+      font-size: 4rem;
+    }
+  }
+  
+  .text-header2 {
+    font-size: 6rem;
+  }
+  
+  @media (max-width: 768px) {
+    .text-header2 {
+      font-size: 3rem;
+    }
+  }
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+  /*======================
+     Arrow
+  ========================*/
+  
+  html,
+  
+  
+  
+  .link {
+      color: link-blue;
+      cursor: pointer;
+      font-weight: 400;
+      text-decoration: none;
+  }
+  
+  .link--arrowed {
+      display: inline-block;
+      height: 2rem;
+      line-height: 2rem;
+  
+      .arrow-icon {
+          position: relative;
+          top: -1px;
+          -webkit-transition: -webkit-transform 0.3s ease;
+          transition: -webkit-transform 0.3s ease;
+          transition: transform 0.3s ease;
+          transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+          vertical-align: middle;
+      }
+  
+      .arrow-icon--circle {
+          transition: stroke-dashoffset 0.3s ease;
+          stroke-dasharray: 95;
+          stroke-dashoffset: 95;
+      }
+  
+      &:hover {
+          .arrow-icon {
+              transform: translate3d(5px, 0, 0);
+          }
+  
+          .arrow-icon--circle {
+              stroke-dashoffset: 0;
+          }
+      }
+  }
+  
