@@ -5,14 +5,14 @@
     }
 }
 .ptb-xxlr-5 {
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   padding-left: 9rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
 }
 @media (max-width: 1280px) {
   .ptb-xxlr-5 {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-left: 9rem;
     padding-right: 1rem;
     padding-bottom: 2rem;
@@ -97,13 +97,13 @@
   }
 }
 .ptb-xxl-7 {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 @media (max-width: 1280px) {
   .ptb-xxl-6 {
-    padding-bottom: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 @media (max-width: 560px) {
@@ -137,12 +137,12 @@
 }
 
 .ptb-xxl-card {
-  padding-top: 1rem;
+  padding-top: 0.625rem;
   padding-bottom: 0.5rem;
 }
 @media (max-width: 1280px) {
   .ptb-xxl-card {
-    padding-top: 1rem;
+    padding-top: 0.625rem;
     padding-bottom: 0.5rem;
   }
 }
