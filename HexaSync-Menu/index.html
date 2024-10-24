@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" datatheme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello HexaSync!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./hex.css"  rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Google Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  </head>
+  <body>
+    <div class="bg-white">
+      <header class="header ">
+        <nav role="#" class="nav mx-auto  hex-grid-3 items-center justify-between  lg:px-8" aria-label="Global">
+            <div class="nav__data flex lg:flex-1 hex-p2">
+                <svg xmlns="http://www.w3.org/2000/svg" id="a" width="150" height="50" viewBox="0 0 2048 576.7442">
+                    <defs>
+                        <style>
+                            .b {
+                                fill: #ffae00;
+                            }
+                        </style>
+                    </defs>
+                    <path class="b" d="M235.8971,33.6963L10.0233,164.7207v262.0487l225.8738,131.0236,225.8744-131.0236V164.7207L235.8971,33.6963ZM235.7703,81.6977l173.1015,100.3727-172.9747,100.3727L62.8989,182.091l172.8714-100.3933ZM418.7666,399.7558l-182.8696,106.3264-182.8689-105.3414v-62.6935l182.8689,105.3437,182.8696-106.3286v62.6935ZM418.7666,287.8348l-182.8074,106.4014-182.9311-106.4014v-62.6928l182.9311,106.4029,182.8074-106.4029v62.6928Z"></path>
+                    <path class="b" d="M733.2232,171.2417h45.5154v250.3325h-45.5154v-110.8983h-108.7309v110.8983h-45.5154v-250.3325h45.5154v100.0602h108.7309v-100.0602Z"></path>
+                    <path class="b" d="M808.3572,328.0151c0-16.6152,2.4659-31.1845,7.4055-43.7089,4.9329-12.5188,11.4975-22.9381,19.687-31.2458,8.184-8.3087,17.5753-14.5681,28.1762-18.7849,10.5942-4.2101,21.4301-6.3207,32.5099-6.3207,26.0088,0,46.2939,8.0704,60.8676,24.2023,14.5681,16.1363,21.8544,40.2205,21.8544,72.2448,0,2.4102-.0624,5.1211-.1804,8.1283-.1247,3.0139-.3052,5.7248-.5424,8.1283h-124.6244c1.2029,15.1718,6.559,26.911,16.0751,35.2197,9.5105,8.3087,23.299,12.4631,41.361,12.4631,10.5942,0,20.2851-.9601,29.0795-2.8914,8.7877-1.9246,15.7131-3.9717,20.7707-6.1391l5.7794,35.761c-2.4102,1.2073-5.7237,2.4726-9.9337,3.7935-4.2167,1.3254-9.0305,2.5283-14.449,3.6108-5.4185,1.0848-11.2602,1.987-17.5207,2.7109-6.265.7217-12.6424,1.0826-19.1446,1.0826-16.6164,0-31.0664-2.4726-43.348-7.4044-12.2816-4.934-22.3957-11.7971-30.3436-20.5914-7.9468-8.7877-13.8509-19.1435-17.7001-31.0653-3.8548-11.9196-5.7794-24.9819-5.7794-39.1936ZM935.149,308.5085c0-6.0166-.8465-11.7392-2.5283-17.1577-1.6874-5.4185-4.1544-10.1153-7.4055-14.0881-3.2511-3.9739-7.225-7.1003-11.9207-9.3924-4.6957-2.2855-10.2946-3.4315-16.7968-3.4315-6.745,0-12.6435,1.2641-17.7012,3.7924-5.0565,2.5294-9.3345,5.8428-12.8229,9.9348-3.4939,4.0976-6.2037,8.7932-8.1283,14.087-1.9302,5.3004-3.2511,10.7178-3.9728,16.2555h81.2764Z"></path>
+                    <path class="b" d="M1075.2503,290.4977l40.1515-57.8471h45.8763l-63.436,90.4929c13.2539,16.6464,25.9598,33.4666,38.1155,50.465,12.1535,17.0006,22.1596,32.9855,30.0162,47.9657h-47.5959c-2.203-4.4261-5.0365-9.2955-8.5003-14.6016-3.4727-5.306-7.1794-10.8303-11.1266-16.5707-3.9494-5.7404-8.0771-11.4295-12.3762-17.063-4.3081-5.6335-8.4959-10.9395-12.5589-15.9225-8.4669,9.8212-16.7467,20.6805-24.846,32.5734-8.0993,11.8906-14.8109,22.418-20.1281,31.5843h-44.5665c3.5674-7.2529,7.9479-14.8956,13.1514-22.9214,5.2035-8.0258,10.7746-16.2277,16.7233-24.6077,5.9442-8.3778,12.0744-16.7578,18.3895-25.1401,6.3151-8.3756,12.57-16.3457,18.7671-23.9038l-64.141-92.3506h48.0426l40.0423,57.8471Z"></path>
+                    <path class="b" d="M1243.637,227.9549c14.4478,0,26.6058,1.8054,36.4827,5.4185,9.8725,3.612,17.758,8.6685,23.6609,15.1707,5.8986,6.5022,10.1153,14.3933,12.6436,23.661,2.5283,9.2733,3.7935,19.4498,3.7935,30.5251v114.5091c-6.745,1.4457-16.9227,3.1943-30.524,5.237-13.6081,2.0449-28.9603,3.0718-46.0567,3.0718-11.3226,0-21.674-1.0848-31.0676-3.2522-9.3913-2.1674-17.4016-5.6557-24.0218-10.4739-6.6247-4.8159-11.8015-11.0753-15.5327-18.7849-3.7356-7.7051-5.5978-17.2145-5.5978-28.5371,0-10.837,2.105-19.9855,6.3218-27.4545,4.2101-7.46,9.9326-13.5457,17.1565-18.2414,7.2262-4.6957,15.5906-8.0659,25.1066-10.1153,9.5094-2.0427,19.4442-3.0696,29.8023-3.0696,4.8137,0,9.8702.3052,15.1696.9022,5.2949.6037,10.9573,1.6261,16.9783,3.0718v-7.2262c0-5.0565-.6037-9.8714-1.8065-14.4478-1.2073-4.572-3.3124-8.6083-6.3195-12.1022-3.0161-3.4872-6.9878-6.197-11.9218-8.1272-4.9385-1.9246-11.1422-2.8902-18.6022-2.8902-10.1153,0-19.3885.7228-27.8153,2.1674-8.4335,1.4457-15.2965,3.133-20.5914,5.0576l-5.4174-35.4001c5.5377-1.9257,13.6014-3.8503,24.2023-5.7805,10.5942-1.9246,21.9101-2.8891,33.9567-2.8891ZM1247.2479,390.8697c13.4856,0,23.7167-.7217,30.7045-2.1674v-48.4045c-2.4102-.724-5.903-1.4457-10.4761-2.1674-4.5754-.724-9.6341-1.0848-15.1696-1.0848-4.8204,0-9.6987.3609-14.6305,1.0848-4.9385.7217-9.3913,2.0493-13.3653,3.9739-3.9739,1.9291-7.1682,4.6377-9.574,8.1261-2.4102,3.495-3.6108,7.8922-3.6108,13.1848,0,10.3581,3.25,17.5196,9.7522,21.4936,6.5022,3.9739,15.2899,5.9609,26.3697,5.9609Z"></path>
+                    <path class="b" d="M1418.8334,387.6175c16.3724,0,28.2943-2.7644,35.761-8.3065,7.4623-5.5377,11.1979-13.3653,11.1979-23.4805,0-6.0166-1.2652-11.1979-3.7935-15.5327-2.5283-4.3348-6.1391-8.2464-10.837-11.7414-4.6957-3.4883-10.4182-6.7383-17.1588-9.7522-6.7428-3.0094-14.4478-5.9609-23.1175-8.85-8.6696-3.1275-17.0407-6.5579-25.1066-10.2957-8.0704-3.73-15.1718-8.3644-21.3109-13.9066-6.1413-5.5377-11.0798-12.1579-14.8109-19.8686-3.7378-7.704-5.6-16.9772-5.6-27.8142,0-22.6341,7.8231-40.3954,23.4805-53.2817,15.6507-12.8797,36.9639-19.3262,63.9372-19.3262,15.653,0,29.5595,1.7497,41.7219,5.2381,12.1579,3.4939,21.7319,7.2863,28.7197,11.3794l-14.0892,36.8447c-8.1885-4.572-17.1588-8.0648-26.911-10.475-9.7544-2.4046-19.8118-3.6131-30.1632-3.6131-12.2827,0-21.8544,2.5294-28.7175,7.5859-6.8631,5.0576-10.2957,12.1635-10.2957,21.3131,0,5.5421,1.1405,10.2946,3.4326,14.2685,2.2855,3.9739,5.5354,7.5291,9.7522,10.6566,4.2101,3.1319,9.1508,6.0222,14.8109,8.6696,5.6557,2.6519,11.8594,5.1813,18.6022,7.5859,11.7971,4.3348,22.3356,8.7309,31.6088,13.1848,9.2688,4.4584,17.0964,9.7533,23.4805,15.8935,6.3775,6.1413,11.2536,13.3653,14.6283,21.674,3.3703,8.3087,5.0588,18.3661,5.0588,30.1632,0,22.6385-8.0102,40.1582-24.0218,52.5589-16.0183,12.4052-39.4364,18.6022-70.259,18.6022-10.3581,0-19.8118-.666-28.3566-1.9847-8.5515-1.3276-16.1386-2.9537-22.7588-4.8783-6.627-1.9246-12.3428-3.9116-17.1588-5.9587-4.8204-2.0449-8.6696-3.9116-11.5587-5.6l13.3653-37.2067c6.5022,3.6131,15.2899,7.2239,26.3697,10.837,11.0753,3.6131,24.4406,5.4174,40.098,5.4174Z"></path>
+                    <path class="b" d="M1687.5843,232.6506c-19.471,71.7659-42.0716,136.7879-67.7864,195.0649-4.8204,10.837-9.7633,20.1036-14.8265,27.8153-5.0632,7.7028-10.7301,14.087-16.9962,19.1435-6.2705,5.0588-13.2628,8.7275-20.9723,11.0174-7.7162,2.2877-16.6353,3.4326-26.7595,3.4326-6.7517,0-13.4455-.7217-20.0724-2.1674-6.6314-1.4457-11.6322-3.0139-15.007-4.6957l7.9456-35.0393c8.7097,3.368,17.3013,5.0565,25.766,5.0565,11.3694,0,20.2573-2.7087,26.6704-8.1283,6.4109-5.4174,12.0332-13.7885,16.8759-25.1044-13.7885-26.4877-27.0312-55.3879-39.7305-86.696-12.6992-31.3037-24.004-64.5364-33.9166-99.6993h46.6002c2.4147,10.1142,5.3728,21.0759,8.8834,32.8719,3.5062,11.8026,7.3153,23.7846,11.4251,35.9425,4.1076,12.1624,8.4535,24.2646,13.049,36.3045,4.5932,12.0443,9.1886,23.2422,13.7818,33.5936,7.6717-21.4312,14.8622-44.2502,21.5782-68.4524,6.7116-24.2034,12.824-47.6215,18.3394-70.2601h45.1523Z"></path>
+                    <path class="b" d="M1703.117,238.7908c8.4268-2.4035,19.3819-4.6957,32.8719-6.8631,13.4833-2.1674,28.4123-3.2511,44.7915-3.2511,15.4101,0,28.2943,2.1117,38.6523,6.3218,10.3514,4.2167,18.6044,10.1142,24.7436,17.7001,6.1413,7.5859,10.4761,16.7411,13.0044,27.4534,2.5283,10.7189,3.7935,22.4581,3.7935,35.2197v106.2026h-43.7089v-99.3395c0-10.113-.666-18.7203-1.987-25.8273-1.3254-7.1003-3.4928-12.8797-6.5022-17.3392-3.0139-4.4529-7.1059-7.704-12.2804-9.7533-5.1835-2.0427-11.503-3.0696-18.9653-3.0696-5.5421,0-11.3226.3609-17.3392,1.0837-6.0233.7217-10.4761,1.3265-13.3653,1.8054v152.4397h-43.7089v-182.7833Z"></path>
+                    <path class="b" d="M1886.2589,327.2934c0-13.9645,2.1674-27.0312,6.5022-39.1936,4.3348-12.1579,10.5318-22.6953,18.6022-31.6077,8.0659-8.9068,17.8827-15.8946,29.4414-20.9512,11.5587-5.0576,24.5631-7.5859,39.0132-7.5859,17.8181,0,34.6784,3.2511,50.5719,9.7533l-9.3913,35.761c-5.0588-2.1674-10.7813-3.9728-17.1588-5.4185-6.3841-1.4446-13.1848-2.1674-20.411-2.1674-17.1009,0-30.1053,5.3628-39.011,16.0751-8.9124,10.7189-13.3675,25.8284-13.3675,45.335,0,18.7826,4.2123,33.656,12.6435,44.611,8.4268,10.9617,22.6341,16.437,42.6263,16.437,7.4623,0,14.8109-.724,22.0349-2.1674,7.2239-1.4457,13.4833-3.2522,18.7826-5.4196l6.1413,36.1241c-4.8204,2.4102-12.1,4.5776-21.8544,6.5022-9.7522,1.9246-19.8095,2.8891-30.1632,2.8891-16.1363,0-30.1609-2.4726-42.0828-7.4044-11.9196-4.934-21.7965-11.7971-29.6197-20.5914-7.8298-8.7877-13.6704-19.2638-17.5196-31.4262-3.8559-12.1579-5.7805-25.3428-5.7805-39.5545Z"></path>
+                </svg>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            Product <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class=" dropdown__container hex-grid-2  hex-dis ">
+                            <div class="lg:px-8 py-4 hex-p1">
+                                <div>
+                                    <div class="dropdown__group">
+                                        <h3 class="block font-semibold text-gray-900">HexaSync Automation Platform</h3>
+                                        <p>Expand connectivity to resolve operational issues</p>
+                                    </div>
+                                    <div>
+                                            <div class="hex-grid-2 hex-dis">
+                                                <div class="dropdown__group">
+                                                    <h4 class="block font-semibold text-gray-900">HexaSync Automation Platform</h4>
+                                                    <ul class="dropdown__list">
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 element  ">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50">
+                                                                <img src="./images/icons/icon-connectors.webp" class="bi" width="100%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">HexaSync Features</h5>
+                                                                <p>Automate Your Work with our HexaSync Integration Platform</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50">
+                                                                <img src="./images/icons/icon-devdocs.webp" class="bi" width="100%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">HexaSync Docs</h5>
+                                                                <p>Let's discover HexaSync in less than 5 minutes.</p>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50">
+                                                                <img src="./images/icons/icon-connectors.webp" class="bi" width="100%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">HexaSync Connectors</h5>
+                                                                <p>You can integrate Hexasync with hundreds of applications to
+                                                                    automate business workflows</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown__group">
+                                                    <h4 class="block font-semibold text-gray-900">Product</h4>
+                                                <ul class="dropdown__list">
+                                                    <li class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 element">
+                                                        <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50">
+                                                            <img src="./images/icons/icon-how-it-works.webp" class="bi" width="100%" alt="">
+                                                        </div>
+                                                        <div class="flex-auto">
+                                                            <h5 class="block font-semibold text-gray-900">How it Works</h5>
+                                                            <p>HexaSync Demonstrations</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 element">
+                                                        <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50">
+                                                            <img src="./images/icons/icon-features.webp" class="bi" width="100%" alt="">
+                                                        </div>
+                                                        <div class="flex-auto">
+                                                            <h5 class="block font-semibold text-gray-900">Apps Integration</h5>
+                                                            <p>Explore 100+ app connections</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:px-8 py-4 hex-p1">
+                                <div>
+                                    <div class="dropdown__group">
+                                        <h3 class="b block font-semibold text-gray-900">What's new</h3>
+                                        <p>Expand connectivity to resolve operational issues</p>
+                                    </div>
+                                    <div>
+                                            <div class="flex-container">
+                                                <div class="dropdown__group">
+                                                    <h4 class="block font-semibold text-gray-900">HexaSync Automation Platform</h4>
+                                                    <ul class="dropdown__list">
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 element">
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Chat bot</h5>
+                                                                <p>Automate Your Work with our HexaSync Integration Platform</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button ">
+                            Solution <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class=" dropdown__container hex-grid-2  hex-dis ">
+                            <div class="lg:px-8 py-4 hex-p1">
+                                <div>
+                                    <div class="dropdown__group">
+                                        <h3 class="block font-semibold text-gray-900">Solution</h3>
+                                        <p>How HexaSync can help you automate your work across teams</p>
+                                    </div>
+                                    <div>
+                                            <div class="hex-grid-2 hex-dis">
+                                                <div class="dropdown__group grid-cols-1">
+                                                    <h4 class="block font-semibold text-gray-900">By App</h4>
+                                                    <ul class="dropdown__list">
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/Shopify.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Shopify</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/MS Dynamics AX.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Microsoft Dynamics CRM</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/QBO.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Quickbooks</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/ecwid-logos-idn3pUPkLM.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Ecwid</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/MS BC.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Microsoft Business-Central</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/Hubspot.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Hubspot</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/Bigcommerce.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Bigcommerce</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/logos/MS Dynamics AX.png" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Microsoft Dynamics AX</h5>
+                                                            </div>
+                                                        </li>
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                            <div class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-blue-50 hover:bg-blue-50 ">
+                                                                <img src="./images/icons/icon-connectors.webp" class="bi" width="50%" alt="">
+                                                            </div>
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">View all apps</h5>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="dropdown__group">
+                                                    <h4 class="block font-semibold text-gray-900">By Use Case</h4>
+                                                <ul class="dropdown__list">
+                                                    <li class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 element">
+                                                        <div class="flex-auto">
+                                                            <h4 class="block font-semibold text-gray-900">Omnichannel</h4>
+                                                            <p>Drive a unified experience for shoppers</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="group relative flex items-center gap-x-6 rounded-lg p-2 text-sm leading-6 element">
+                                                        <div class="flex-auto">
+                                                            <h4 class="block font-semibold text-gray-900">Customer Services</h4>
+                                                            <p>Centralized ticket management software</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                        <div class="flex-auto">
+                                                            <h4 class="block font-semibold text-gray-900"> Supply Chain Management</h4>
+                                                            <p>Synchronize orders and inventory</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="group relative flex items-center gap-x-6 rounded-lg p-2  text-sm leading-6 element">
+                                                        <div class="flex-auto">
+                                                            <h4 class="block font-semibold text-gray-900">Data Warehouse</h4>
+                                                            <p>Build Data Warehouse for real-time reporting</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:px-8 py-4 hex-p1">
+                                <div>
+                                    <div class="dropdown__group">
+                                        <h3 class="b block font-semibold text-gray-900">What's new</h3>
+                                        <p>Expand connectivity to resolve operational issues</p>
+                                    </div>
+                                    <div>
+                                            <div class="flex-container">
+                                                <div class="dropdown__group">
+                                                    <h4 class="block font-semibold text-gray-900">HexaSync Automation Platform</h4>
+                                                    <ul class="dropdown__list">
+                                                        <li class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 element">
+                                                            <div class="flex-auto">
+                                                                <h5 class="block font-semibold text-gray-900">Chat bot</h5>
+                                                                <p>Automate Your Work with our HexaSync Integration Platform</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button ">
+                            Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+                        <div class=" row dropdown__container d-md-flex ">
+                            <div class=" col-lg-6 dropdown__content ptb-xxlr-5 pt-5">
+                                <div class="dropdown__group">
+                                    <h3 class="fw-bold">Resources</h3>
+                                    <p>Your journey to automation excellence starts here</p>
+                                </div>
+                                <div class="d-md-flex ">
+                                    <div class="dropdown__group">
+                                        <h4>Learn more</h4>
+                                        <ul class="dropdown__list px-LRTB">
+                                            <li class="d-flex">
+                                                <div class="dropdown__link">
+                                                    <p>Blog</p>
+                                                    <p>HexaSync Learn</p>
+                                                    <p>Events and webinar</p>
+                                                    <p>Customers stories</p>
+                                                    <p>HexaSync Guide</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown__group ps-xxl-5">
+                                        <h4>Get help</h4>
+                                        <ul class="dropdown__list px-LRTB">
+                                            <li class="d-flex">
+                                                <div class="dropdown__link">
+                                                    <p>Help center</p>
+                                                    <p>Community</p>
+                                                    <p>Support Services</p>
+                                                    <p>More about HexaSync</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown__group ps-xxl-5">
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="align-content-center">Partners</h5>
+                                        </div>
+                                        <ul class="dropdown__list px-LRTB">
+                                            <li class="d-flex">
+                                                <div class="dropdown__link">
+                                                    <p>Solution Partners</p>
+                                                    <p>Technology partners</p>
+                                                    <p>Community Partners</p>
+                                                    <p class="fw-bold">Become a Partners</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 dropdown__content bg-primary-gray ptb-xxlr-5 pt-5">
+                                <div class="dropdown__group">
+                                    <h3 class="fw-bold">HexaSync quick-start guide</h3>
+                                    <p>Expand connectivity to resolve operational issues</p>
+                                </div>
+                                <div class="d-flex dropdown__group  ">
+                                    <img src="./assets/image/Tasks.png" width="20%" alt="img">
+                                    <p class="fw-bold align-content-center ps-xxl-2">Let's discover HexaSync <br> in less than 5 minutes.</p>
+                                </div>
+                                <div class="dropdown__group">
+                                    <h4>Developer resources</h4>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <ul class="dropdown__list">
+                                                    <li>
+                                                        <div class="align-content-center dropdown__link">
+                                                            <p>Developer Platform</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="align-content-center dropdown__link">
+                                                            <p>Build Integration</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="align-content-center dropdown__link">
+                                                            <p>Integration Partner Program</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="align-content-center dropdown__link">
+                                                            <p>Documentation</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Pricing</a>
+                    </li>
+                    <!--=============== DROPDOWN 3 ===============-->
+                    <li>
+                        <a href="#" class="nav__link">Enterprise</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden  lg:flex lg:flex-1 lg:justify-end items-center ">
+            <a href="#" class="text-white ps-4"> log in</a>
+            <a href="#" class="text-white ps-4"> Contact sales</a>
+            <a href="#" class="text-white pe-5 ps-4"> Explore apps</a>
+            <button type="button" class=" focus:outline-none hex-tex-color bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5   dark:focus:ring-yellow-900">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+          <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+          </div>
+          <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+            <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+              <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </div>
+            <div class="text-center">
+              <h1 class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">Data to enrich your online business</h1>
+              <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat.</p>
+              <div class="mt-10 flex items-center justify-center gap-x-6">
+                <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+                <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+            <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+          </div>
+        </div>
+      </div>
+      <footer></footer>
+      <script src="./menu.js"></script>
+  </body>
+</html>
