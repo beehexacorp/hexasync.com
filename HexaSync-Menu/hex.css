@@ -9,7 +9,7 @@ h1 {
   font-size: 3.5rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 430px) {
   h1 {
       font-size: 2.5rem;
   }
@@ -18,25 +18,25 @@ h2 {
   font-size: 3rem;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 439px) {
   h2 {
       font-size: 1rem;
   }
 }
 h3 {
-  font-size: 2.5rem !important;
+  font-size: 1.75rem !important;
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (max-width: 430px) {
   h3 {
       font-size: 1.5rem !important;
   }
 }
 h4 {
-  font-size: 1.5rem !important;
+  font-size: 1.25rem !important;
 }
 
-@media only screen and (min-width: 430px) {
+@media only screen and (max-width: 430px) {
   h4 {
       font-size: 1rem !important;
   }
@@ -462,7 +462,7 @@ h4 {
     transition: background-color 0.3s;
   }
   .nav__link:hover {
-    background-color: var(--first-color-lighten);
+    background-color:  hsl(231, 100%, 26%);
   }
   
   /* Show menu */
