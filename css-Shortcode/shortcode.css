@@ -1,0 +1,158 @@
+body {
+    font-family: Google Sans;
+  }
+
+  p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    line-height: 1.5;
+    padding-bottom:5px;
+    padding-top: 5px;
+    margin: 0px;
+  }
+
+  h2 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding-top: 5px;
+    margin: 0px;
+  }
+  h3 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding-top: 10px;
+    margin: 0px;
+  }
+  @media (max-width: 925px) {
+    h2 {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        padding-bottom:5px;
+        padding-top: 15px;
+        margin: 0px;
+      }
+    p {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.5;
+        padding-bottom:10px;
+        padding-top: 5px;
+        margin: 0px;
+      }
+  }
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr; /* Stacked layout by default */
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.tempaltelist_list {
+    max-width: unset;
+    grid-gap: 5px;
+}
+.row {
+    display: grid; 
+}
+.col{
+    flex: 0 0 auto;
+    width: 16.666666668%;
+    display: flex;
+}
+@media (max-width: 925px) {
+    .col {
+      flex: 0 0 auto;         /* Prevents the column from growing or shrinking automatically */
+      width: 100%;     /* Sets the column width to 2/12 of the total row width */
+      max-width: 100%; /* Ensures the column does not exceed 2/12 of the row width */
+    }
+  }
+.col-6 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+@media (max-width: 925px){
+    .col-6 {
+        flex: 0 0 auto;         /* Prevents the column from growing or shrinking automatically */
+        width: 100%;/* Sets the column width to 8/12 of the total row width */
+        max-width: 100%; /* Ensures the column does not exceed 8/12 of the row width */
+    }
+}
+.card {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    position: relative;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+.card:hover{
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(173, 173, 173, 0.3);
+    background-color: #fffbf9;
+}
+.card_layout--line {
+        position: relative;
+        align-items: center;
+        align-content: center;
+        display: flex !important;
+}
+@media (max-width: 925px){
+    .card_layout--line {
+            position: relative;
+            -webkit-box-align: center;
+            align-items: center;
+            min-height: 60px;
+            align-content: center;
+            display: grid !important;
+    } 
+}
+.card_icon {
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 15px;
+}
+.button {
+    background-color: #FFBE00; /* yellow */
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+  }
+   /* 3 cột*/
+   .flex-container {
+    display: flex;
+    gap: 15px; /* Space between columns */
+  }
+
+  .col-3 {
+    flex: 1; /* Each column takes up equal space */
+
+  }.flex-container {
+    display: flex;
+    gap: 15px; /* Space between columns */
+  }
+
+  .col-3 {
+    flex: 1; /* Each column takes up equal space */
+  }
+  .button-2 {
+    background-color: #FFBE00; /* yellow */
+    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+  }
