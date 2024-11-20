@@ -134,13 +134,16 @@ body {
     display: flex;
     gap: 15px; /* Space between columns */
   }
+  @media (max-width: 925px) {
+    .flex-container {
+        display: grid;
+        gap: 15px; /* Space between columns */
+      }
+  }
 
   .col-3 {
     flex: 1; /* Each column takes up equal space */
 
-  }.flex-container {
-    display: flex;
-    gap: 15px; /* Space between columns */
   }
 
   .col-3 {
