@@ -9,7 +9,8 @@
 <body>
     <!-- Card Template -->
     <div id="card" style="display: grid; max-width: 1200px; margin: 0 auto; padding-bottom: 20px;">
-        <div id="card-container" style="
+        <div  style="
+            background-color: #f6f6f9 !important;
             min-height: 70px;
             max-width: 1200px;
             border: 1px solid #e0e0e0;
@@ -19,16 +20,25 @@
             gap: 15px;
             align-items: center;
             border-radius: 4px;" 
-            onmouseover="this.style.backgroundColor='#F7F8FF'" 
-            onmouseout="this.style.backgroundColor='white'">
+            onmouseover="
+                        this.style.transition = 'box-shadow 0.4s ease-in-out, transform 0.4s ease';
+                        this.style.boxShadow = '0 -2px 10px rgba(255, 204, 0, 0.6), 0 2px 10px rgba(242, 187, 5, 0.6)'; 
+                        this.style.transform = 'translateY(0px)';"
+            onmouseout="this.style.boxShadow = ''; this.style.transform = '';"
+            >
             
             <!-- Icons -->
             <div id="icons" style="display: flex; gap: 10px; align-items: center;">
-                <div style="display: flex; border: 1px solid #e0e0e0; padding: 10px; border-radius: 4px; background-color: white;">
-                    <img src="./img/shopify_300x300.png" alt="Shopify Icon" style="width: 36px; height: 36px; margin: 0px;">
+                <div>
+                    <img src="./img/shopify_36x36.webp" alt="Shopify_Icon">
                 </div>
-                <div style="display: flex; border: 1px solid #e0e0e0; padding: 10px; border-radius: 4px; background-color: white;">
-                    <img src="./img/Quickbooks.png" alt="QuickBooks Icon" style="width: 36px; height: 36px; margin: 0px;">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                      </svg>
+                </div>
+                <div>
+                    <img src="./img/quickbooks_36x36.webp" alt="QuickBooks_Icon">
                 </div>
             </div>
 
@@ -40,26 +50,18 @@
                     line-height: 1;
                     margin: 0px;
                     font-family: 'Google Sans', sans-serif;
-                    font-weight: bold;
+                    font-weight: 600;
                     padding-bottom: 3px;">
-                    Check Report
-                </p>
-                <p style="
-                    color: rgb(0, 0, 0);
-                    font-size: 15px;
-                    line-height: 1.5;
-                    margin: 0px;
-                    font-family: 'Google Sans', sans-serif;">
-                    QuickBooks + Shopify Integration
+                    QuickBooks Shopify Integration - HexaSync Profile Tempalte
                 </p>
             </div>
 
             <!-- Button -->
             <a id="button" href="#" style="
                 flex: 0 0 auto;
-                background-color: #FFBE00;
+                background-color: #eeb41b;
                 color: black;
-                padding: 10px 16px;
+                padding: 15px 22px;
                 border: none;
                 border-radius: 2px;
                 font-size: 15px;
@@ -67,12 +69,13 @@
                 text-align: center;
                 font-weight: bold;
                 font-family: 'Google Sans', sans-serif;">
-                Register An Account
+                AUTOMATE NOW
             </a>
         </div>
     </div>
     <div id="card" style="display: grid; max-width: 1200px; margin: 0 auto; padding-bottom: 20px;">
-        <div id="card-container" style="
+        <div  style="
+            background-color: #f6f6f9 !important;
             min-height: 70px;
             max-width: 1200px;
             border: 1px solid #e0e0e0;
@@ -82,16 +85,25 @@
             gap: 15px;
             align-items: center;
             border-radius: 4px;" 
-            onmouseover="this.style.backgroundColor='#F7F8FF'" 
-            onmouseout="this.style.backgroundColor='white'">
+            onmouseover="
+                        this.style.transition = 'box-shadow 0.4s ease-in-out, transform 0.4s ease';
+                        this.style.boxShadow = '0 -2px 10px rgba(255, 204, 0, 0.6), 0 2px 10px rgba(242, 187, 5, 0.6)'; 
+                        this.style.transform = 'translateY(0px)';"
+            onmouseout="this.style.boxShadow = ''; this.style.transform = '';"
+            >
             
             <!-- Icons -->
             <div id="icons" style="display: flex; gap: 10px; align-items: center;">
-                <div style="display: flex; border: 1px solid #e0e0e0; padding: 10px; border-radius: 4px; background-color: white;">
-                    <img src="./img/shopify_300x300.png" alt="Shopify Icon" style="width: 36px; height: 36px; margin: 0px;">
+                <div>
+                    <img src="./img/shopify_36x36.webp" alt="Shopify_Icon">
                 </div>
-                <div style="display: flex; border: 1px solid #e0e0e0; padding: 10px; border-radius: 4px; background-color: white;">
-                    <img src="./img/Quickbooks.png" alt="QuickBooks Icon" style="width: 36px; height: 36px; margin: 0px;">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrows" viewBox="0 0 16 16">
+                        <path d="M1.146 8.354a.5.5 0 0 1 0-.708l2-2a.5.5 0 1 1 .708.708L2.707 7.5h10.586l-1.147-1.146a.5.5 0 0 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L13.293 8.5H2.707l1.147 1.146a.5.5 0 0 1-.708.708z"/>
+                      </svg>
+                </div>
+                <div>
+                    <img src="./img/quickbooks_36x36.webp" alt="QuickBooks_Icon">
                 </div>
             </div>
 
@@ -102,27 +114,19 @@
                     font-size: 23px;
                     line-height: 1;
                     margin: 0px;
-                    padding-bottom: 3px;
                     font-family: 'Google Sans', sans-serif;
-                    font-weight: bold;">
-                    Product Sync
-                </p>
-                <p style="
-                    color: rgb(0, 0, 0);
-                    font-size: 15px;
-                    line-height: 1.5;
-                    margin: 0px;
-                    font-family: 'Google Sans', sans-serif;">
-                    QuickBooks + Shopify Integration
+                    font-weight: 600;
+                    padding-bottom: 3px;">
+                    QuickBooks Shopify Integration - HexaSync Profile Tempalte
                 </p>
             </div>
 
             <!-- Button -->
             <a id="button" href="#" style="
                 flex: 0 0 auto;
-                background-color: #FFBE00;
+                background-color: #eeb41b;
                 color: black;
-                padding: 10px 16px;
+                padding: 15px 22px;
                 border: none;
                 border-radius: 2px;
                 font-size: 15px;
@@ -130,10 +134,11 @@
                 text-align: center;
                 font-weight: bold;
                 font-family: 'Google Sans', sans-serif;">
-                Register An Account
+                AUTOMATE NOW
             </a>
         </div>
     </div>
+
 
 </body>
 </html>
