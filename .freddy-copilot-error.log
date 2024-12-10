@@ -1,0 +1,31 @@
+
+      --------------------------------------
+      Error Stack:: "Error: Please set up the FDK path to proceed, you can set up the path from settings.\n\tat a.FdkHelper.getfdkPathFromConfig (c:\\Users\\phangiap\\.vscode\\extensions\\freshworksmarketplace.freddy-copilot-2.2.9\\dist\\extension.js:2:77624)\n\tat a.FdkHelper.runInBackground (c:\\Users\\phangiap\\.vscode\\extensions\\freshworksmarketplace.freddy-copilot-2.2.9\\dist\\extension.js:2:78959)\n\tat a.FdkHelper.getFdkVersion (c:\\Users\\phangiap\\.vscode\\extensions\\freshworksmarketplace.freddy-copilot-2.2.9\\dist\\extension.js:2:75029)\n\tat d.getFdkVersion (c:\\Users\\phangiap\\.vscode\\extensions\\freshworksmarketplace.freddy-copilot-2.2.9\\dist\\extension.js:2:131175)\n\tat d.resolveWebviewView (c:\\Users\\phangiap\\.vscode\\extensions\\freshworksmarketplace.freddy-copilot-2.2.9\\dist\\extension.js:2:113148)\n\tat process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n\tat async QB.$resolveWebviewView (file:///c:/Users/phangiap/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:156:24422)"
+      Error Message:: "Please set up the FDK path to proceed, you can set up the path from settings."
+      Error Name:: "Error"
+      
+      
+      
+      
+      
+      
+
+      Timestamp:: Fri, 29 Nov 2024 04:14:02 GMT
+      Extension Version:: 2.2.9
+      --------------------------------------
+    
+      --------------------------------------
+      Error Stack:: "AxiosError: Request failed with status code 401\n\tat Fe (c:\\Users\\phangiap\\.vscode\\extensions\\freshworksmarketplace.freddy-copilot-2.2.9\\dist\\extension.js:2:158106)\n\tat IncomingMessage.<anonymous> (c:\\Users\\phangiap\\.vscode\\extensions\\freshworksmarketplace.freddy-copilot-2.2.9\\dist\\extension.js:2:169976)\n\tat IncomingMessage.emit (node:events:531:35)\n\tat endReadableNT (node:internal/streams/readable:1696:12)\n\tat process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+      Error Message:: "Request failed with status code 401"
+      Error Name:: "AxiosError"
+      Request ID:: f3f0b80c-87a2-4a70-8cae-d5c2690cd6e8
+      
+      Env:: release
+      API Route:: /api/v1/copilot/migration_scope
+      API Response Message:: Invalid token
+      API Response Error Type:: unauthorized
+
+      Timestamp:: Fri, 29 Nov 2024 04:14:02 GMT
+      Extension Version:: 2.2.9
+      --------------------------------------
+    
